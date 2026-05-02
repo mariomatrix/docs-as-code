@@ -28,7 +28,7 @@ Nećemo vas učiti programirati, koristit ćemo vizualne alate!
 1. **Pokazivanje strukture:** Otvorite `Demo-Projekt` u Obsidianu. Pokažite datoteke i mape (`Istrazivanje`, `Zajednicki_Rad`).
 2. **UUID i Graph View:** Pokažite `Istrazivanje` mapu. Objasnite kako svaki dokument može imati jedinstveni ID (UUID) u pozadini. Pokažite **Graph view** (veze između bilješki, web clipper članaka i EU prijave) - vizualni prikaz vašeg "mozga projekta".
 3. **Zajednički rad (Spajanje dokumenata):** Otvorite mapu `Zajednicki_Rad`. Pokažite kako Ana piše `01_Uvod_Ana.md`, a Marko `02_Razrada_Marko.md`. Pokažite `index.md` datoteku koja ih automatski spaja. Objasnite: Nema više prepisivanja iz jednog u drugi dokument!
-4. **Pisanje teksta:** Otvorite `01_Prijava_EU_Projekta.md`, napišite jedan paragraf, ubacite sliku ili jednostavnu tablicu.
+4. **Pisanje teksta:** Otvorite `01_Prijava_EU_Projekta.md`, napišite jedan paragraf, ubacite sliku ili jednostavnu tablicu. Naglasite: *"Slike jednostavno kopiramo u mapu projekta i ubacujemo s `![opis](slika.png)` – sve živi zajedno s tekstom u repozitoriju."*
 5. **Reference:** Pokažite kako se lako citira iz Mendeleya/Zotera (`[@autor2024]`).
 6. **Slanje promjena (Commit & Branch):** Kliknite u Obsidian Git pluginu na ikonu za spremanje. Objasnite publici: "Sada sam ovo spremio na svoju radnu kopiju (granu/branch), ali to još nije u službenom dokumentu."
 7. **Prikaz Pull Requesta (Odobravanje):** Otvorite GitHub u web pregledniku. Pokažite kako se otvara *Pull Request*. 
@@ -36,7 +36,7 @@ Nećemo vas učiti programirati, koristit ćemo vizualne alate!
    - Pokažite kako možete ostaviti komentar na specifičnu liniju teksta.
    - Kliknite na veliki zeleni gumb **Merge pull request** i objasnite: "Kao voditelj, sada sam službeno odobrio Anin tekst u glavni dokument."
 8. **Magija (Automatizacija):** Nakon klika na Merge, pokažite kako se zeleni kružić (GitHub Actions) vrti. Objasnite da "Robot sada čita vaš spojeni tekst, dodaje naslovnicu, brojeve stranica, bibliografiju, i kreira DOCX i PDF."
-9. **Rezultat:** Preuzmite i otvorite kreirani PDF/DOCX pred publikom!
+9. **Rezultat:** Preuzmite i otvorite kreirani PDF/DOCX pred publikom! Naglasite: *"Ako trebamo točno uskladiti s predloškom sveučilišta ili EU obrasca, kolega s administrativnog odjela jednom napravi Word datoteku sa zadanim stilovima, mi tu datoteku stavimo u repozitorij i svi budući dokumenti automatski nasljeđuju taj izgled."*
 
 ## 5. Sljedeći koraci (10 min)
 * **Je li ovo za sve?** Ne. Idealno je za veće projekte, prijave, elaborate, knjige. Nije za kratki dopis.

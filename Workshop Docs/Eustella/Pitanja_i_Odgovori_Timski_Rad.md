@@ -33,3 +33,11 @@ Konflikt se događa *samo* kada dvije osobe istovremeno mijenjaju **isti redak t
 3. **Tehničko rješenje u Obsidianu:** Ako se konflikt ipak dogodi, Obsidian će u tekstu pokazati obje verzije označene strelicama (npr. `<<<<<<< HEAD`). Vi samo trebate obrisati verziju teksta koja vam se ne sviđa, obrisati te strelice i ponovno stisnuti "Spremi" (Commit). 
 
 > **Ključna poruka za publiku:** "U Wordu, ako dvoje ljudi piše po istom dokumentu na Teamsu, Word će često samo stvoriti novu datoteku `dokument-Ana-laptop.docx` i ostaviti vama da ručno pronalazite razlike. Git vas *tjera* da taj problem riješite odmah, a čuva apsolutno sve stare verzije da nikad ništa ne izgubite."
+
+---
+
+## 4. Što je s povjerljivošću podataka?
+
+**Pitanje iz publike:** *"Nećemo valjda staviti prijavu za kompetitivni EU projekt na javni GitHub da je svi vide?"*
+
+**Kako odgovoriti:** "Apsolutno ne. Na GitHubu (ili GitLabu) možete kreirati **privatne repozitorije** kojima pristup imaju samo pozvani članovi tima. Akademske institucije dobivaju besplatne napredne pakete na GitHubu, a mnogi fakulteti već imaju i vlastiti interno hostirani GitLab server koji je potpuno zatvoren za vanjski svijet i ispunjava sve sigurnosne zahtjeve."

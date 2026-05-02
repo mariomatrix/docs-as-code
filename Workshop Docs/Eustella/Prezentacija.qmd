@@ -1,28 +1,31 @@
 ---
-title: "Docs-as-Code"
-subtitle: "Nova era pisanja projektne i znanstvene dokumentacije"
+title: "Digitalna radionica: Novi način timskog pisanja za znanost i projekte"
+subtitle: "Docs-as-Code: Inženjerski pristup pisanju dokumentacije"
+author: "Mario Lipovac"
 format: 
   revealjs:
-    theme: default
+    theme: simple
     transition: slide
     slide-number: true
     chalkboard: true
+    logo: logo_placeholder.png
+    footer: "Digitalna radionica: Docs-as-Code na Fakultetu"
 ---
 
-## Trenutno stanje: "Word Kaos"
+## Zašto smo danas ovdje?
 
-Kako danas izgleda predaja elaborata ili EU prijave?
-
-<br>
-
-- `elaborat_v1.docx`
-- `elaborat_ispravljeno.docx`
-- `elaborat_ispravljeno_Ana.docx`
-- `elaborat_FINAL.docx`
-- `elaborat_FINAL_STVARNO.docx`
+Pretrpani folderi i verzije kradu dragocjeno vrijeme.
 
 <br>
-**Problem:** Gubitak podataka, prepisivanje, noćna mora spajanja.
+
+- `Elaborat_v1.docx`
+- `Elaborat_final.docx`
+- `Elaborat_final_STVARNO.docx`
+- `Elaborat_Ana_ispravak.docx`
+- `Elaborat_UPLOAD_FINAL.docx`
+
+<br>
+**Problem:** Gubitak podataka, noćna mora spajanja, nema traga tko je što mijenjao.
 
 ---
 
@@ -31,69 +34,85 @@ Kako danas izgleda predaja elaborata ili EU prijave?
 Zašto inženjerski kod funkcionira, a tekst ne?
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
 ### Stari način (Word)
 - **Fokus:** Izgled (WYSIWYG)
-- **Rezultat:** Autori glume grafičke dizajnere dok pišu.
+- **Uloga:** Autor glumi grafičkog dizajnera dok piše.
+- **Rezultat:** Nestabilan format.
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ### Novi način (Docs-as-Code)
-- **Fokus:** Sadržaj
-- **Rezultat:** Pišemo čisti tekst, a "robot" (računalo) brine o dizajnu, marginama i numeraciji.
+- **Fokus:** Sadržaj i logika
+- **Uloga:** Autor piše čisti tekst (Markdown).
+- **Rezultat:** Sustav brine o marginama, fontu i numeraciji.
 :::
 :::
 
 ---
 
-## Jedan izvor istine
+## Jedan izvor istine (Sustav)
 
 ```{mermaid}
 flowchart LR
   A(Ana) -->|Prijedlog| B[(Glavni Dokument \n na GitHubu)]
   M(Marko) -->|Prijedlog| B
   P(Profesor) -->|Odobrenje| B
+  B -->|Automatizacija| D[Gotov PDF / Word]
 ```
 
 <br>
 
-- Svi rade na **istim** datotekama.
-- Sustav pamti svako dodano ili obrisano slovo.
-- Ne postoji "Save As".
+- Svi rade na **istim** datotekama u istom repozitoriju.
+- Sustav pamti svaku izmjenu, svako slovo. Nema više "Save As".
+- **Vremenski stroj:** Povratak na bilo koju verziju u sekundi.
 
 ---
 
 ## AI obožava Docs-as-Code
 
-Zašto je ovo ključno za doba Umjetne Inteligencije?
+Markdown je nativni jezik Umjetne Inteligencije.
 
 <br>
 
-- 🧠 **AI "razmišlja" u Markdownu:** ChatGPT i Copilot nativno čitaju i pišu ovaj format.
-- 🚫 **Nema smeća:** Word datoteke su pune skrivenog XML koda koji zbunjuje AI modele.
-- 🚀 **Baza znanja:** Vaš repozitorij postaje savršen čisti izvor podataka (RAG) za vaše vlastite AI asistente.
+- **Bez šuma:** AI ne vidi Wordov skriveni XML kod, vidi samo vašu ideju.
+- **Brzina:** ChatGPT/Copilot trenutno sažimaju, prevode i analiziraju čisti tekst.
+- **Baza znanja:** Vaš repozitorij postaje savršen izvor za privatne AI asistente (RAG).
 
 ---
 
-## Rječnik novih pojmova
+## Vaš digitalni alat za timsko pisanje
 
-Ne trebamo programirati, samo koristimo njihove alate:
+Obsidian nije samo editor, to je mreža znanja.
 
 <br>
 
-1. 📝 **Markdown (Obsidian):** Naš alat za pisanje. Običan tekst, bez nevidljivog formatiranja.
-2. 🗄️ **Git (Skladište):** Vremenski stroj za dokumente. Spaja tekstove tima i čuva povijest.
-3. 🤖 **Quarto (Tvornica):** Program koji naš tekst jednim klikom pretvara u PDF ili DOCX po službenom EU predlošku.
+- **Povezanost:** Bilješke, literatura, pretraživanje weba i projektni zadatak su povezani.
+- **Graph View:** Vizualni prikaz vašeg projekta — vidite veze koje ste previdjeli.
+- **UUID:** Trajno praćenje dokumenata bez obzira na ime datoteke.
 
 ---
 
-## Kako to izgleda u praksi?
+## Tri jednostavna alata
 
-Naš tijek rada (Workflow):
+Bez programiranja — samo inženjerski proces.
 
-1. **Piši:** Ana i Marko pišu svoja poglavlja u Obsidianu.
-2. **Odobri:** Šalju *Pull Request* (službeni prijedlog izmjene). Voditelj pregledava izmjene (crveno/zeleno) i odobrava.
-3. **Generiraj:** Čim voditelj odobri, Quarto automatski stvara PDF.
+<br>
+
+1. **Obsidian (Editor):** Tu pišemo. Brz, jednostavan, vizualan.
+2. **GitHub (Repozitorij):** Vremenski stroj koji spaja rad cijelog tima.
+3. **Quarto (Formatiranje):** Alat koji pretvara tekst u standardizirani format (PDF/DOCX).
+
+---
+
+## Gdje ovo koristiti?
+
+| Koristiti za: | Izbjegavati za: |
+| :--- | :--- |
+| EU projekti i prijave | Kratki dopisi (1-2 str.) |
+| Diplomski i doktorski radovi | Brzinski interni zapisi |
+| Elaborati i studije | Jednostavne tablice |
+| Timska dokumentacija | Jednokratne bilješke |
 
 ---
 
@@ -101,6 +120,10 @@ Naš tijek rada (Workflow):
 
 <br>
 
-*Prebacujemo se u Obsidian i GitHub...*
+1. **Piši** (Obsidian)
+2. **Poveži** (Graph View)
+3. **Odobri** (Pull Request na GitHubu)
+4. **Preuzmi** (Automatski PDF/DOCX)
 
-*(Prikazat ćemo UUID, Graph View, zajednički rad i automatizaciju)*
+<br>
+*Pogledajmo kako to izgleda u praksi...*

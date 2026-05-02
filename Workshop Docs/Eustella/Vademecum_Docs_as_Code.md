@@ -10,7 +10,7 @@ Za samostalan rad na vašem računalu potrebno je jednom instalirati sljedeća t
 
 1. **[Git for Windows](https://git-scm.com/download/win):** Motor u pozadini koji pamti verzije.
 2. **[Quarto CLI](https://quarto.org/docs/get-started/):** Sustav koji pretvara vaš tekst u PDF i DOCX.
-3. **[Obsidian](https://obsidian.md/):** Aplikacija za pisanje (vaš digitalni notes).
+3. **[Obsidian](https://obsidian.md/):** Aplikacija za pisanje 
 
 Nakon instalacije, u Obsidianu odaberite **"Open folder as vault"** i odaberite mapu vašeg projekta.
 
@@ -32,17 +32,17 @@ Uđite u *Settings (zupčanik)* -> *Community plugins* -> *Turn off safe mode* -
 
 Zaboravite miša i izbornike, formatirajte tekst tipkovnicom!
 
-| Želim napraviti... | Pišem u Obsidianu ovako... |
-| :--- | :--- |
-| **Glavni naslov** | `# Naslov` |
-| **Podnaslov** | `## Podnaslov` |
-| **Podebljano** | `**Ovo je važno**` |
-| **Kurziv** | `*Ovo je koso*` |
-| **Lista s nabrajanjem** | `- Prva stavka`<br>`- Druga stavka` |
-| **Tablica** | <code>\| Stupac 1 \| Stupac 2 \|</code><br><code>\|---|---|</code><br><code>\| Podatak 1 \| Podatak 2 \|</code> |
-| **Poveznica na drugi dokument** | `[[Ime drugog dokumenta]]` |
-| **Citiranje literature** | `[@oznakaAutora2024]` |
-| **Ubacivanje poglavlja** | `{{< include 01_Uvod.md >}}` |
+| Želim napraviti...              | Pišem u Obsidianu ovako...                             |     |                                                      |
+| :------------------------------ | :----------------------------------------------------- | --- | ---------------------------------------------------- |
+| **Glavni naslov**               | `# Naslov`                                             |     |                                                      |
+| **Podnaslov**                   | `## Podnaslov`                                         |     |                                                      |
+| **Podebljano**                  | `**Ovo je Bold**`                                      |     |                                                      |
+| **Kurziv**                      | `*Ovo je Italic*`                                      |     |                                                      |
+| **Lista s nabrajanjem**         | `- Prva stavka`<br>`- Druga stavka`                    |     |                                                      |
+| **Tablica**                     | <code>\| Stupac 1 \| Stupac 2 \|</code><br><code>\|--- | --- | </code><br><code>\| Podatak 1 \| Podatak 2 \|</code> |
+| **Poveznica na drugi dokument** | `[[Ime drugog dokumenta]]`                             |     |                                                      |
+| **Citiranje literature**        | `[@oznakaAutora2024]`                                  |     |                                                      |
+| **Ubacivanje poglavlja**        | `{{< include 01_Uvod.md >}}`                           |     |                                                      |
 
 ---
 
@@ -57,3 +57,9 @@ Vaš svakodnevni rad svodi se na tri jednostavna koraka:
    * Ako želite ručno spremiti ključnu verziju, pritisnite `Ctrl + P` (ili `Cmd + P` na Macu), upišite `Git: Commit all changes and push` i pritisnite Enter.
 
 Vaš rad je sada na sigurnom (GitHub) i automatski će se generirati konačni PDF!
+
+---
+
+## 5. Korisni savjeti
+
+* **Službeni obrasci (Word predlošci):** Ako vaša institucija zahtijeva točan izgled DOCX dokumenta (fontovi, zaglavlja), u vaš `_quarto.yml` konfiguracijski fajl jednostavno dodajte liniju pod docx format: `format: docx: reference-doc: putanja_do_predloska.docx`. Svi vaši dokumenti automatski će naslijediti izgled iz tog Worda!
