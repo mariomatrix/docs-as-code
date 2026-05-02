@@ -1,0 +1,106 @@
+---
+title: "Docs-as-Code"
+subtitle: "Nova era pisanja projektne i znanstvene dokumentacije"
+format: 
+  revealjs:
+    theme: default
+    transition: slide
+    slide-number: true
+    chalkboard: true
+---
+
+## Trenutno stanje: "Word Kaos"
+
+Kako danas izgleda predaja elaborata ili EU prijave?
+
+<br>
+
+- `elaborat_v1.docx`
+- `elaborat_ispravljeno.docx`
+- `elaborat_ispravljeno_Ana.docx`
+- `elaborat_FINAL.docx`
+- `elaborat_FINAL_STVARNO.docx`
+
+<br>
+**Problem:** Gubitak podataka, prepisivanje, noćna mora spajanja.
+
+---
+
+## Promjena paradigme
+
+Zašto inženjerski kod funkcionira, a tekst ne?
+
+::: {.columns}
+::: {.column width="50%"}
+### Stari način (Word)
+- **Fokus:** Izgled (WYSIWYG)
+- **Rezultat:** Autori glume grafičke dizajnere dok pišu.
+:::
+
+::: {.column width="50%"}
+### Novi način (Docs-as-Code)
+- **Fokus:** Sadržaj
+- **Rezultat:** Pišemo čisti tekst, a "robot" (računalo) brine o dizajnu, marginama i numeraciji.
+:::
+:::
+
+---
+
+## Jedan izvor istine
+
+```{mermaid}
+flowchart LR
+  A(Ana) -->|Prijedlog| B[(Glavni Dokument \n na GitHubu)]
+  M(Marko) -->|Prijedlog| B
+  P(Profesor) -->|Odobrenje| B
+```
+
+<br>
+
+- Svi rade na **istim** datotekama.
+- Sustav pamti svako dodano ili obrisano slovo.
+- Ne postoji "Save As".
+
+---
+
+## AI obožava Docs-as-Code
+
+Zašto je ovo ključno za doba Umjetne Inteligencije?
+
+<br>
+
+- 🧠 **AI "razmišlja" u Markdownu:** ChatGPT i Copilot nativno čitaju i pišu ovaj format.
+- 🚫 **Nema smeća:** Word datoteke su pune skrivenog XML koda koji zbunjuje AI modele.
+- 🚀 **Baza znanja:** Vaš repozitorij postaje savršen čisti izvor podataka (RAG) za vaše vlastite AI asistente.
+
+---
+
+## Rječnik novih pojmova
+
+Ne trebamo programirati, samo koristimo njihove alate:
+
+<br>
+
+1. 📝 **Markdown (Obsidian):** Naš alat za pisanje. Običan tekst, bez nevidljivog formatiranja.
+2. 🗄️ **Git (Skladište):** Vremenski stroj za dokumente. Spaja tekstove tima i čuva povijest.
+3. 🤖 **Quarto (Tvornica):** Program koji naš tekst jednim klikom pretvara u PDF ili DOCX po službenom EU predlošku.
+
+---
+
+## Kako to izgleda u praksi?
+
+Naš tijek rada (Workflow):
+
+1. **Piši:** Ana i Marko pišu svoja poglavlja u Obsidianu.
+2. **Odobri:** Šalju *Pull Request* (službeni prijedlog izmjene). Voditelj pregledava izmjene (crveno/zeleno) i odobrava.
+3. **Generiraj:** Čim voditelj odobri, Quarto automatski stvara PDF.
+
+---
+
+## Vrijeme je za Live Demo!
+
+<br>
+
+*Prebacujemo se u Obsidian i GitHub...*
+
+*(Prikazat ćemo UUID, Graph View, zajednički rad i automatizaciju)*

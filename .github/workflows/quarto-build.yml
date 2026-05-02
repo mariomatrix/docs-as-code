@@ -1,0 +1,36 @@
+name: Quarto Publish
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: pre-release
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: "Workshop Docs/Eustella/Demo-Projekt"
+
+      - name: Upload PDF and DOCX Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated-Documents
+          path: |
+            Workshop Docs/Eustella/Demo-Projekt/*.pdf
+            Workshop Docs/Eustella/Demo-Projekt/*.docx

@@ -1,0 +1,21 @@
+% Ovdje možete dodavati LaTeX naredbe za dizajn PDF-a
+
+% Uključivanje paketa za slike i zaglavlja
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+% Postavljanje stila stranice da koristi fancyhdr
+\pagestyle{fancy}
+
+% Brisanje zadanih zaglavlja
+\fancyhead{}
+
+% Dodavanje logotipa fakulteta u gornji lijevi kut (L)
+% Pobrinite se da u istu mapu stavite sliku "logo_fakulteta.png"
+% \fancyhead[L]{\includegraphics[height=1.5cm]{logo_fakulteta.png}}
+
+% Dodavanje teksta u gornji desni kut (R)
+\fancyhead[R]{\textit{Građevinski fakultet - Docs as Code}}
+
+% Linija ispod zaglavlja
+\renewcommand{\headrulewidth}{0.4pt}
