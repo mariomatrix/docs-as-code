@@ -2,14 +2,15 @@
 title: "Digitalna radionica: Novi način timskog pisanja za znanost i projekte"
 subtitle: "Docs-as-Code: Inženjerski pristup pisanju dokumentacije"
 author: "Mario Lipovac"
-format: 
+format:
   revealjs:
-    theme: simple
+    theme: night
     transition: slide
     slide-number: true
     chalkboard: true
     logo: logo_placeholder.png
     footer: "Digitalna radionica: Docs-as-Code na Fakultetu"
+    css: custom.css
 ---
 
 ## Zašto smo danas ovdje?
@@ -31,18 +32,28 @@ Pretrpani folderi i verzije kradu dragocjeno vrijeme.
 
 ## Promjena paradigme
 
-Zašto inženjerski kod funkcionira, a tekst ne?
+
+<br>
 
 ::: {.columns}
-::: {.column width="40%"}
-### Stari način (Word)
+::: {.column width="45%"}
+### Stari način 
+### - Word -
 - **Fokus:** Izgled (WYSIWYG)
 - **Uloga:** Autor glumi grafičkog dizajnera dok piše.
 - **Rezultat:** Nestabilan format.
 :::
 
-::: {.column width="40%"}
-### Novi način (Docs-as-Code)
+::: {.column width="10%"}
+
+
+
+:::
+
+
+::: {.column width="45%"}
+### Novi način 
+### - Docs-as-Code -
 - **Fokus:** Sadržaj i logika
 - **Uloga:** Autor piše čisti tekst (Markdown).
 - **Rezultat:** Sustav brine o marginama, fontu i numeraciji.

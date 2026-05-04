@@ -1,0 +1,16 @@
+/* custom.css – premium stil za Quarto Revealjs */
+.reveal {
+    font-family: "Inter", "Helvetica Neue", sans-serif;
+    font-size: 1.6rem;
+    /* malo veći tekst za projektor */
+    line-height: 1.6;
+    color: #e0e0e0;
+    /* svijetlo siva boja teksta */
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+    color: #ffd700;
+    /* zlatni naglasci naslova */
+}

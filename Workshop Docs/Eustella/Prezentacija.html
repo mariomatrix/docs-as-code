@@ -6,11 +6,11 @@
 <script src="Prezentacija_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="Prezentacija_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="Prezentacija_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Prezentacija_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="Prezentacija_files/libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <meta name="author" content="Građevinski fakultet">
-  <title>Od kaosa do sustava</title>
+  <meta name="author" content="Mario Lipovac">
+  <title>Digitalna radionica: Novi način timskog pisanja za znanost i projekte</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,7 +32,8 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Prezentacija_files/libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="Prezentacija_files/libs/revealjs/dist/theme/quarto-422092a5e00d6ffa3175d97bbb8f7ab9.css">
+  <link rel="stylesheet" href="custom.css">
   <link href="Prezentacija_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Prezentacija_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="Prezentacija_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -130,18 +131,18 @@
   <script src="Prezentacija_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="Prezentacija_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Od kaosa do sustava</h1>
+  <h1 class="title">Digitalna radionica: Novi način timskog pisanja za znanost i projekte</h1>
   <p class="subtitle">Docs-as-Code: Inženjerski pristup pisanju dokumentacije</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Građevinski fakultet 
+Mario Lipovac 
 </div>
 </div>
 </div>
@@ -162,21 +163,25 @@ Građevinski fakultet
 </section>
 <section id="promjena-paradigme" class="slide level2">
 <h2>Promjena paradigme</h2>
-<p>Zašto inženjerski kod funkcionira, a tekst ne?</p>
+<p><br></p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="stari-način-word">Stari način (Word)</h3>
+<div class="column" style="width:45%;">
+<h3 id="stari-način">Stari način</h3>
+<h3 id="word--">- Word -</h3>
 <ul>
 <li><strong>Fokus:</strong> Izgled (WYSIWYG)</li>
 <li><strong>Uloga:</strong> Autor glumi grafičkog dizajnera dok piše.</li>
 <li><strong>Rezultat:</strong> Nestabilan format.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<h3 id="novi-način-docs-as-code">Novi način (Docs-as-Code)</h3>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<h3 id="novi-način">Novi način</h3>
+<h3 id="docs-as-code--">- Docs-as-Code -</h3>
 <ul>
 <li><strong>Fokus:</strong> Sadržaj i logika</li>
 <li><strong>Uloga:</strong> Autor piše čisti tekst (Markdown).</li>
-<li><strong>Rezultat:</strong> Sustav (Robot) brine o marginama, fontu i numeraciji.</li>
+<li><strong>Rezultat:</strong> Sustav brine o marginama, fontu i numeraciji.</li>
 </ul>
 </div></div>
 </section>
@@ -200,27 +205,27 @@ Građevinski fakultet
 </div>
 <p><br></p>
 <ul>
-<li>Svi rade na <strong>istim</strong> datotekama u istom spremniku.</li>
-<li>Sustav pamti svako slovo. Nema više “Save As”.</li>
+<li>Svi rade na <strong>istim</strong> datotekama u istom repozitoriju.</li>
+<li>Sustav pamti svaku izmjenu, svako slovo. Nema više “Save As”.</li>
 <li><strong>Vremenski stroj:</strong> Povratak na bilo koju verziju u sekundi.</li>
 </ul>
 </section>
 <section id="ai-obožava-docs-as-code" class="slide level2">
 <h2>AI obožava Docs-as-Code</h2>
-<p>Markdown je “materinji jezik” Umjetne Inteligencije.</p>
+<p>Markdown je nativni jezik Umjetne Inteligencije.</p>
 <p><br></p>
 <ul>
-<li>🧠 <strong>Bez šuma:</strong> AI ne vidi Wordov skriveni XML kod, vidi samo vašu ideju.</li>
-<li>🚀 <strong>Brzina:</strong> ChatGPT/Copilot trenutno sažimaju, prevode i analiziraju čisti tekst.</li>
-<li>📂 <strong>Baza znanja:</strong> Vaš repozitorij postaje savršen izvor za privatne AI asistente (RAG).</li>
+<li><strong>Bez šuma:</strong> AI ne vidi Wordov skriveni XML kod, vidi samo vašu ideju.</li>
+<li><strong>Brzina:</strong> ChatGPT/Copilot trenutno sažimaju, prevode i analiziraju čisti tekst.</li>
+<li><strong>Baza znanja:</strong> Vaš repozitorij postaje savršen izvor za privatne AI asistente (RAG).</li>
 </ul>
 </section>
-<section id="vaš-novi-digitalni-mozak" class="slide level2">
-<h2>Vaš novi digitalni mozak</h2>
+<section id="vaš-digitalni-alat-za-timsko-pisanje" class="slide level2">
+<h2>Vaš digitalni alat za timsko pisanje</h2>
 <p>Obsidian nije samo editor, to je mreža znanja.</p>
 <p><br></p>
 <ul>
-<li><strong>Povezanost:</strong> Bilješke s terena, literatura i projektni zadatak su povezani.</li>
+<li><strong>Povezanost:</strong> Bilješke, literatura, pretraživanje weba i projektni zadatak su povezani.</li>
 <li><strong>Graph View:</strong> Vizualni prikaz vašeg projekta — vidite veze koje ste previdjeli.</li>
 <li><strong>UUID:</strong> Trajno praćenje dokumenata bez obzira na ime datoteke.</li>
 </ul>
@@ -230,9 +235,9 @@ Građevinski fakultet
 <p>Bez programiranja — samo inženjerski proces.</p>
 <p><br></p>
 <ol type="1">
-<li>📝 <strong>Obsidian (Editor):</strong> Tu pišemo. Brz, jednostavan, vizualan.</li>
-<li>🗄️ <strong>GitHub (Skladište):</strong> Vremenski stroj koji spaja rad cijelog tima.</li>
-<li>🤖 <strong>Quarto (Tvornica):</strong> Robot koji pretvara tekst u službeni format (PDF/DOCX).</li>
+<li><strong>Obsidian (Editor):</strong> Tu pišemo. Brz, jednostavan, vizualan.</li>
+<li><strong>GitHub (Repozitorij):</strong> Vremenski stroj koji spaja rad cijelog tima.</li>
+<li><strong>Quarto (Formatiranje):</strong> Alat koji pretvara tekst u standardizirani format (PDF/DOCX).</li>
 </ol>
 </section>
 <section id="gdje-ovo-koristiti" class="slide level2">
@@ -280,7 +285,7 @@ Građevinski fakultet
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="logo_placeholder.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Radionica: Docs-as-Code na Fakultetu</p>
+<p>Digitalna radionica: Docs-as-Code na Fakultetu</p>
 </div>
 </div></div>
 
