@@ -1,11 +1,11 @@
-﻿---
-title: "Poglavlje 9 - Merge u main: spajanje promjena"
+---
+title: "Poglavlje 8 - Merge u main: spajanje promjena"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
-> 📋 **Preduvjet:** Otvoren i pregledan Pull Request (Poglavlje 8)
+> 📋 **Preduvjet:** Otvoren i pregledan Pull Request (Poglavlje 3)
 
 ***
 
@@ -108,6 +108,21 @@ Odmah nakon mergea GitHub nudi gumb:
 
 **Klikni ga.** Radni branch više nije potreban — promjene su u `main`. Brisanje brancha ne briše promjene, samo čisti repozitorij od zastarjelih grana.
 
+> ⚠️ **"Delete branch" ne briše tvoj rad!** Ovo je najčešća točka panike za početnike. Evo što se zapravo dogodi:
+>
+> ```text
+> Tvoj branch:   A -- B -- C   (tvoji commiti)
+>                            \
+> main:          D -- E ------+-- F   (merge commit)
+>                                 ^
+>                          Sav tvoj rad (A, B, C)
+>                          trajno je pohranjen ovdje.
+>                          Branch je samo "oznaka" --
+>                          sigurno ga možeš obrisati.
+> ```
+>
+> Brisanje brancha je kao uklanjanje ljepljive ceduljice s mape — mapa (tvoji commiti) ostaje netaknuta.
+
 > 💡 **Zašto brisati branch?** Repozitorij s desetak starih, zastarjelih brancheva postaje zbunjujuć. Čist repozitorij = samo aktivni branchevi su vidljivi.
 
 ***
@@ -179,7 +194,7 @@ Konflikte je **najlakše riješiti na GitHubu**, direktno u pregledniku, za jedn
 
 ### Kako spriječiti konflikte
 
-Konflikti su rijetki ako tim poštuje dogovor o podjeli rada (Poglavlje 5). Ako se ipak pojave češće, najčešći uzrok je:
+Konflikti su rijetki ako tim poštuje dogovor o podjeli rada (Poglavlje 3). Ako se ipak pojave češće, najčešći uzrok je:
 
 - Dugo čekanje s otvaranjem PR-a (branch je previše zastario)
 - Dvije osobe mijenjaju isti zajednički element (uvodni tekst, naslovnicu)
@@ -194,8 +209,8 @@ Nakon što je tvoj PR mergean:
 
 ```text
 1. Prebaci se na main i napravi pull (9.4)
-2. Kreiraj novi branch za sljedeći zadatak (Poglavlje 6)
-3. Počni pisati sljedeće poglavlje (Poglavlje 7)
+2. Kreiraj novi branch za sljedeći zadatak (Poglavlje 3)
+3. Počni pisati sljedeće poglavlje (Poglavlje 3)
 ```
 
 Radni ciklus se ponavlja. Svaki PR je jedna zatvorena cjelina — jasna, pregledana i dokumentirana.
@@ -240,8 +255,10 @@ git branch -d ana-kovac/uvod
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 8 – Pull Request](08-pull-request.md)
-**Sljedeće poglavlje:** [Poglavlje 10 – Word DOCX template: koncept ->](10-word-template.md)
+
+
+
+
 
 
 

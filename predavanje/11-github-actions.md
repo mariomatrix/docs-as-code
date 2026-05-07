@@ -1,8 +1,8 @@
 ﻿---
-title: "Poglavlje 11 - GitHub Actions: pregled automatizacije"
+title: "Poglavlje 10 - GitHub Actions: pregled automatizacije"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme čitanja:** 10 minuta
 > 📋 **Preduvjet:** Razumijevanje toka rada (Poglavlja 1–10)
@@ -243,8 +243,10 @@ Kada je Action uspješno završio, generirani dokumenti su dostupni kao **Artifa
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 10 – Word DOCX template](10-word-template.md)
-**Sljedeće poglavlje:** [Poglavlje 12 – Quarto render: lokalni pregled dokumenta ->](12-lokalni-pregled.md)
+
+
+
+
 
 
 

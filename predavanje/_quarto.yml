@@ -1,4 +1,4 @@
-project:
+﻿project:
   type: book
 
 book:
@@ -9,7 +9,6 @@ book:
     - 01-uvod.md
     - 02-instalacija.md
     - 03-obsidian-git.md
-    - 04-kloniranje-repozitorija.md
     - 05-podjela-rada.md
     - 06-branching.md
     - 07-pisanje-dokumenta.md
@@ -37,3 +36,6 @@ format:
   docx:
     toc: true
     number-sections: false
+    reference-doc: template.docx
+
+

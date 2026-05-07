@@ -1,17 +1,17 @@
-﻿---
-title: "Poglavlje 12 - Quarto render: lokalni pregled dokumenta"
+---
+title: "Poglavlje 11 - Quarto render: lokalni pregled dokumenta"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
-> 📋 **Preduvjet:** Quarto instaliran i provjeren (Poglavlje 2.3), repozitorij kloniran (Poglavlje 4)
+> 📋 **Preduvjet:** Quarto instaliran i provjeren (Poglavlje 2.3), repozitorij kloniran (Poglavlje 3)
 
 ***
 
 ## 12.1 Zašto renderirati lokalno?
 
-GitHub Actions automatski renderira dokument svaki put kada se pusha na `main` — to smo vidjeli u Poglavlju 11. Zašto bi onda uopće pokretao/la Quarto lokalno na svom računalu?
+GitHub Actions automatski renderira dokument svaki put kada se pusha na `main` — to smo vidjeli u Poglavlju 3. Zašto bi onda uopće pokretao/la Quarto lokalno na svom računalu?
 
 **Tri razloga:**
 
@@ -105,6 +105,8 @@ Otvori preglednik na adresi `http://localhost:4848/` — vidiš live pregled dok
 
 Za zaustavljanje pregleda pritisni `Ctrl+C` u Command Promptu.
 
+> ⚠️ **Zaustavljanje previewa:** `quarto preview` pokreće lokalni web server koji ostaje aktivan u pozadini sve dok ga ručno ne zaustaviš. Za zaustavljanje **uvijek pritisni `Ctrl+C` u Command Promptu**. Ako zatvoriš terminal prozor direktno (bez Ctrl+C), sljedeći puta možeš dobiti grešku `Error: Port 4848 is already in use`. Rješenje: restart Command Prompta.
+
 > 💡 **Kada koristiti preview vs. render?**
 > - **Preview** — dok pišeš i hoćeš vidjeti promjene odmah (HTML prikaz)
 > - **Render** — kada hoćeš finalnu `.docx` datoteku za provjeru izgleda u Wordu
@@ -133,7 +135,10 @@ Otvori `.docx` datoteku dvostrukim klikom — otvara se u Microsoft Wordu s prim
 
 Datoteka `_quarto.yml` je "mozak" Quarto projekta — definira što se renderira, kako i kamo. Nalazi se u korijenu repozitorija.
 
-> **Ne mijenjaj ovu datoteku** bez dogovora s maintainerom.
+> ℹ️ **Ne mijenjaj ovu datoteku** bez dogovora s maintainerom.
+
+> 💡 **Primjer što se dogodi ako zaboraviš dodati poglavlje:**
+> Kreirao/la si `04-zakljucak.md` i napisao/la ga u cijelosti, ali u `_quarto.yml` lista `chapters:` završava s `03-rezultati.md`. Quarto ne zna da tvoja datoteka postoji — u finalnom Wordu nema zaklučka. Rješenje: javi maintaineru da doda tvoju datoteku u listu poglavlja.
 
 Evo što znače ključni dijelovi (samo za razumijevanje):
 
@@ -203,11 +208,11 @@ format:
      -> Nešto nije u redu? Vrati se u Obsidian i ispravi.
           |
           v
-  5. Commit + Push (Poglavlje 7)
+  5. Commit + Push (Poglavlje 3)
           |
           v
   6. GitHub Actions automatski renderira
-     službenu verziju (Poglavlje 11)
+     službenu verziju (Poglavlje 3)
 ```
 
 ***
@@ -239,8 +244,10 @@ format:
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 11 – GitHub Actions](11-github-actions.md)
+
 **Sljedeće:** [Dodaci – Cheat sheet, Rječnik pojmova, Top 10 grešaka ->](13-dodaci.md)
+
+
 
 
 

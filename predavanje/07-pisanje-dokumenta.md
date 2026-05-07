@@ -1,11 +1,11 @@
-﻿---
-title: "Poglavlje 7 - Pisanje dokumenta"
+---
+title: "Poglavlje 6 - Pisanje dokumenta"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme:** 20–30 minuta
-> 📋 **Preduvjet:** Vault otvoren, vlastiti branch kreiran (Poglavlje 6)
+> 📋 **Preduvjet:** Vault otvoren, vlastiti branch kreiran (Poglavlje 3)
 
 ***
 
@@ -176,6 +176,9 @@ Ovo je važna informacija.
 ***
 
 ### Matematičke formule i izrazi
+
+> ⚠️ **Napredno — preskoči ako tek učiš osnove Markdowna**
+> Sljedeći odjeljak pokriva pisanje matematičkih formula u LaTeX notaciji. Potrebno je samo ako tvoj EU projekt uključuje statičke izračune, financijske formule ili metodološke jednadžbe. Ako to nije slučaj, slobodno priđi na Poglavlje 7.3.
 
 Quarto podržava pisanje matematičkih formula u **LaTeX notaciji**. Ovo je korisno za EU projektne dokumente koji uključuju statističke pokazatelje, financijske formule ili metodološke izračune.
 
@@ -358,7 +361,9 @@ Svaki radni dan (ili radna sesija) trebao bi izgledati ovako:
   8. Zatvori Obsidian
 ```
 
-> 💡 **Zašto commit svakih 30–60 minuta?** Svaki commit je točka na koju se možeš **vratiti** ako nešto krene naopako. Ako pišeš 3 sata bez commita i slučajno obrišeš poglavlje, nemaš se gdje vratiti.
+> 💡 **Kada koristiti automatsku, a kada ručnu commit poruku?**
+> - **Automatska poruka** (`{{date}} - {{hostname}}: {{numFiles}} datoteka`) — idealna za **česte, kratke commite** u fazi pisanja: draft verzije, male ispravke, svakodnevni ritam pisanja.
+> - **Ručna poruka** (npr. `Dodano poglavlje 1.2 - Ciljevi projekta`) — **obavezna** kada commitaš logičku cjelinu koju ćeš poslati na pregled (Pull Request). Recenzent čita poruke da razumije što si napravio/la.
 
 ***
 
@@ -420,6 +425,19 @@ git push origin ana-kovac/uvod
 
 ***
 
+## 7.9 Što ako nešto pođe po zlu — česte situacije
+
+### Zaboravio/la sam commitati prije zatvaranja Obsidiana
+Git prati sve promjene u pozadini — nijedna datoteka nije izgubljena sve dok je Obsidian bio otvoren. Jednostavno otvori Source Control panel (`Ctrl+Shift+G`) i vidiš sve izmjene koje čekaju commit.
+
+### Kolega je pushao izmjene u moju datoteku dok sam pisao/la
+Otvori Obsidian, klikni **v Pull**. Ako ste radili na različitim dijelovima datoteke, Git će automatski spojiti promjene. Ako ste radili na istim recima — vidi Poglavlje 8.5 o rješavanju konflikata.
+
+### Slučajno sam commitao/la na `main` umjesto na svoju granu
+Nemoj panicirati. Pošalji poruku maintaineru i opiši što se dogodilo. Maintainer može lako poništiti taj commit s GitHuba bez gubljenja sadržaja. Za budućnost: uvijek provjeri statusnu traku (`Current branch:`) prije commita.
+
+***
+
 ## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
@@ -434,8 +452,10 @@ git push origin ana-kovac/uvod
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 6 – Branching](06-branching.md)
-**Sljedeće poglavlje:** [Poglavlje 8 – Pull Request: predaja rada na pregled ->](08-pull-request.md)
+
+
+
+
 
 
 

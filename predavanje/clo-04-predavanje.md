@@ -245,5 +245,4 @@ Vrati `README.md` u originalno stanje — obriši redak koji si dodao/la, spremi
 
 ---
 
-**← Prethodno poglavlje:** [Poglavlje 3 – Obsidian Git plugin](03-obsidian-git-plugin.md)
-**Sljedeće poglavlje:** [Poglavlje 5 – Podjela rada: koncept i primjer →](05-podjela-rada.md)
+

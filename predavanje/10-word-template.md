@@ -1,8 +1,8 @@
 ﻿---
-title: "Poglavlje 10 - Word DOCX template: koncept"
+title: "Poglavlje 9 - Word DOCX template: koncept"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme čitanja:** 10 minuta
 > 📋 **Preduvjet:** Razumijevanje osnovnog toka rada (Poglavlja 1–9)
@@ -60,7 +60,7 @@ Quarto zna gdje je template jer je putanja definirana u `_quarto.yml` konfigurac
 ```yaml
 format:
   docx:
-    reference-doc: templates/EU-dokument-template.docx
+    reference-doc: template.docx
 ```
 
 Ova veza je već postavljena — **ne trebaš ništa mijenjati** da bi template bio primijenjen. Svaki put kada pokreneš render, Quarto automatski koristi ovaj predložak.
@@ -170,8 +170,11 @@ Kao autor, tvoj jedini posao je **ispravno koristiti Markdown oznake**. Sve osta
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 9 – Merge u main](09-merge-u-main.md)
-**Sljedeće poglavlje:** [Poglavlje 11 – GitHub Actions: pregled automatizacije ->](11-github-actions.md)
+
+
+
+
+
 
 
 

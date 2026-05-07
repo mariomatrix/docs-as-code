@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Poglavlje 2 - Instalacija i postavljanje okruzenja"
 ---
 
@@ -36,6 +36,9 @@ Git je program koji radi u pozadini i **prati sve promjene** u tvojim datotekama
 > ⚠️ **Upozorenje:** Ako instalacijski čarobnjak pita za administratorsku lozinku, upiši ju — instalacija zahtijeva administratorska prava.
 
 ### Korak 3: Provjera instalacije
+
+> 💡 **Što je Command Prompt i zašto ga koristimo?**
+> Command Prompt (CMD) je tekstualni prozor kroz koji daješ naredbe računalu direktno — bez klikanja mišem. U ovom priručniku koristimo ga samo za tri stvari: provjeru verzije Gita, konfiguraciju identiteta i kloniranje repozitorija. Sve ostalo radi se kroz grafičko sučelje Obsidiana. Crni prozor ne treba biti zastrašujuć — svaka naredba koju upišeš bit će ti jasno objašnjena.
 
 1. Pritisni tipke **Windows + R** na tipkovnici
 2. Upiši `cmd` i pritisni Enter — otvara se crni prozor (Command Prompt)
@@ -99,7 +102,7 @@ Obsidian je editor — program za pisanje teksta. Koristit ćeš ga svaki dan za
 
 ### Korak 3: Početni ekran
 
-Kada se Obsidian prvi put pokrene, prikazuje se ekran dobrodošlice s opcijama. **Nemoj još ništa birati** — vault (projektni folder) kreirat ćemo u Poglavlju 4, kada kloniramo repozitorij.
+Kada se Obsidian prvi put pokrene, prikazuje se ekran dobrodošlice s opcijama. **Nemoj još ništa birati** — vault (projektni folder) kreirat ćemo u Poglavlju 3, kada kloniramo repozitorij.
 
 Možeš zatvoriti Obsidian za sada.
 
@@ -289,8 +292,9 @@ desktop.ini        # Windows postavke foldera
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 1 – Uvod](01-uvod.md)
-**Sljedeće poglavlje:** [Poglavlje 3 – Obsidian Git plugin ->](03-obsidian-git.md)
+
+
+
 
 
 

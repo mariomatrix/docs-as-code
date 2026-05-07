@@ -2,7 +2,7 @@
 title: "Poglavlje 4 - Kloniranje repozitorija i kreiranje Obsidian vaulta"
 ---
 
-{{< pagebreak >}}
+
 
 **Procijenjeno vrijeme:** 10–15 minuta
 
@@ -83,6 +83,7 @@ Kada pogledaš lijevi izbornik u Obsidianu, vidjet ćeš razne foldere i datotek
 | Novi folder EU-Project-Template nalazi se na mom računalu | [ ] |
 | Projekt je uspješno otvoren u Obsidianu (Open folder as vault) | [ ] |
 | Znam u kojim folderima pišem, a koje sistemske foldere ne diram | [ ] |
+
 
 
 

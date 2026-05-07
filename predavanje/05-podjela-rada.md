@@ -1,11 +1,11 @@
-﻿---
-title: "Poglavlje 5 - Podjela rada i timska suradnja"
+---
+title: "Poglavlje 4 - Podjela rada i timska suradnja"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme čitanja:** 10–15 minuta
-> 📋 **Preduvjet:** Repozitorij kloniran i vault otvoren (Poglavlje 4)
+> 📋 **Preduvjet:** Repozitorij kloniran i vault otvoren (Poglavlje 3)
 
 ***
 
@@ -48,6 +48,8 @@ Naš "printer" (Quarto alat) će na kraju samostalno uzeti sve ove male datoteke
 ### 2. Vlasništvo (Jedna osoba = Jedna datoteka)
 Budući da je projekt razbijen na module, tim se može dogovoriti tko je "vlasnik" kojeg modula. 
 Ako je Ana zadužena za *Uvod*, nitko drugi u timu **ne smije otvarati niti uređivati** datoteku `01-uvod.qmd` dok je Ana na njoj.
+
+> ℹ️ **Napomena:** Ovo je **timski dogovor, ne tehničko ograničenje** — Git te neće fizički spriječiti da otvoriš tuđu datoteku. Ali poštovanje ovog pravila štiti cijeli tim od nepotrebnih konflikata i mogućeg gubljenja tuđeg rada.
 
 Kada odvojimo ljude u zasebne datoteke, Git može savršeno i potpuno automatski spojiti njihov rad bez ikakvih konflikata!
 
@@ -168,8 +170,10 @@ Sve dok pišeš isključivo unutar svog `01-uvod` dokumenta, tehnički si apsolu
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 4 – Kloniranje repozitorija](04-kloniranje-repozitorija.md)
-**Sljedeće poglavlje:** [Poglavlje 6 – Branching: Tvoj izolirani prostor za rad ->](06-branching.md)
+
+
+
+
 
 
 

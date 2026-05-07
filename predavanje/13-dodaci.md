@@ -1,8 +1,8 @@
-﻿---
-title: "Poglavlje 13 - Dodaci: Cheat Sheet, Rjecnik i Rjesavanje gresaka"
+---
+title: "Poglavlje 12 - Dodaci: Cheat Sheet, Rjecnik i Rjesavanje gresaka"
 ---
 
-{{< pagebreak >}}
+
 
 Ovo poglavlje služi kao tvoja "prva pomoć". Ne moraš ga čitati od početka do kraja. Spremi ga (ili isprintaj) kako bi mu se mogao/la brzo vratiti kada zaboraviš neku naredbu, kada čuješ nepoznat izraz ili kada sustav javi grešku.
 
@@ -19,6 +19,10 @@ Sve najvažnije akcije koje radiš svaki dan, sažete na jednom mjestu.
 | **Pošalji na GitHub** | Git: Push | git push origin ime-grane |
 | **Živi pregled dokumenta** | *(Nema u Obsidianu)* | quarto preview |
 | **Generiraj Word na računalu** | *(Nema u Obsidianu)* | quarto render |
+| **Poništi zadnji commit** (ako nisi pushao!) | — | `git reset --soft HEAD~1` |
+| **Vidi povijest commita** | — | `git log --oneline` |
+| **Prekini merge konflikt** (vrati na staro) | — | `git merge --abort` |
+| **Vrati obrisanu datoteku** iz zadnjeg commita | — | `git checkout HEAD -- ime-datoteke.md` |
 
 : Cheat Sheet {tbl-colwidths="[30,35,35]"}
 
@@ -92,12 +96,11 @@ Svi griješe, posebno na početku. Ovdje je popis 10 najčešćih problema i kak
 ### **10\. Ne razumijem zašto se Quarto ruši**
 
 * **Simptom:** Crveni križić, čudna greška koja nema smisla, panika.  
-* **Rješenje:**  
-  1. Duboko udahni.  
-  2. Izgovori tri puta na glas: *"GIT\! GIT\! GIT\!"*.  
-  3. Ne činite ništa  
-  4. Učinite nešto  
-  5. Kopiraj grešku iz loga i pošalji je svom administratoru.
+* **Rješenje:**
+  1. Izgovori na glas **"GIT! GIT! GIT!"** nekoliko puta.
+  2. Provjeri jesi li u **ispravnom folderu**? Terminal treba biti u folderu projekta (npr. `C:\Desktop\EU-Project-Template>`)
+  3. Provjeri je li **Word dokument zatvoren**? Word drži `.docx` datoteke zaključanima dok su otvorene — Quarto ne može pisati u zaključanu datoteku.
+  4. Pošalji administratoru screenshot loga s greškom.
 
 ## **13.4 Korištenje AI alata (Tvoj osobni Git asistent)**
 
@@ -126,7 +129,30 @@ Ne moraš biti stručnjak da bi ih pitao/la za pomoć. Dovoljno je objasniti št
 
 
 
-**Kraj priručnika\!** Želimo ti ugodan i produktivan rad u novom okruženju\!
+**Kraj priručnika!** Želimo ti ugodan i produktivan rad u novom okruženju!
+
+***
+
+## 13.5 Sljedeći projekt — što ponoviti, što ne
+
+Bravo — završio/la si prvi projekt! Sada te čeka drugi. Dobra vijest: **većinu postavljanja ne treba ponavljati**.
+
+| Što | Treba li ponoviti? | Napomena |
+|-----|-------------------|-----------|
+| Instalacija Gita | ❌ Ne | Instaliran je trajno na ovom računalu |
+| Instalacija Obsidiana | ❌ Ne | Isti program, radi dalje |
+| Instalacija Quarta | ❌ Ne | Isti program, radi dalje |
+| GitHub račun | ❌ Ne | Isti račun za sve projekte |
+| PAT token | ⚠️ Provjeri | Je li istekao? Provjeri u GitHub Settings → Developer settings → Tokens |
+| Kloniranje repozitorija | ✅ Da | Svaki projekt = novi `git clone` novog URL-a |
+| Instalacija Obsidian Git plugina | ✅ Da | Plugin se konfigurira po vaultu, ne globalno |
+| Kreiranje brancha | ✅ Da | Za svaki novi zadatak nova grana |
+
+: Što ponavljati za novi projekt {tbl-colwidths="[35,20,45]"}
+
+> 💡 **Zlatno pravilo:** Novi projekt ne znači nova instalacija alata. Novi projekt znači samo jedno: `git clone` novog repozitorija i konfiguracija Obsidian Git plugina u tom vaultu. To traje 10–15 minuta — kao u Poglavlju 3 ovog priručnika.
+
+
 
 
 

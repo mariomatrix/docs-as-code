@@ -1,11 +1,11 @@
 ﻿---
-title: "Poglavlje 8 - Pull Request: predaja rada na pregled"
+title: "Poglavlje 7 - Pull Request: predaja rada na pregled"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
-> 📋 **Preduvjet:** Završeno pisanje na vlastitom branchu, barem jedan commit pushean na GitHub (Poglavlje 7)
+> 📋 **Preduvjet:** Završeno pisanje na vlastitom branchu, barem jedan commit pushean na GitHub (Poglavlje 3)
 
 ***
 
@@ -244,8 +244,10 @@ Kratka kontrolna lista koju prođeš sam/a prije nego tražiš pregled:
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 7 – Pisanje dokumenta](07-pisanje-dokumenta.md)
-**Sljedeće poglavlje:** [Poglavlje 9 – Merge u main: spajanje promjena ->](09-merge-u-main.md)
+
+
+
+
 
 
 

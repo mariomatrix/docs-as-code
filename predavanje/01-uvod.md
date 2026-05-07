@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Poglavlje 1 - Uvod: Nova paradigma rada s dokumentacijom"
 ---
 
-{{< pagebreak >}}
+
 
 ### Preduvjeti za cijeli priručnik
 
@@ -23,6 +23,7 @@ Prije nego počneš, provjeri imaš li:
 | GitHub račun | — | Pohrana i dijeljenje dokumentacije |
 
 > ⏱️ **Procijenjeno vrijeme postavljanja:** 2–3 sata (jednokratno)
+
 > ⏱️ **Procijenjeno vrijeme učenja toka rada:** 1 dan aktivne prakse
 
 ***
@@ -109,7 +110,7 @@ Ti pišeš samo tekst. Oblikovanje (fontovi, stilovi, numeracija) se primjenjuje
 **Korak po korak u svakodnevnom radu:**
 
 1. **Pull** — Jutarnji ritual: preuzmi sve izmjene koje su napravili kolege
-2. **Branch** — Kreiraj svoju "radnu granu" (vlastitu kopiju projekta)
+2. **Branch** (Grana) — Kreiraj svoju radnu granu, tj. osobnu izoliranu kopiju projekta. Dok pišeš na svojoj grani, glavna verzija ostaje netaknuta. Detalje o granama vidi u Poglavlju 5.
 3. **Piši** — Piši u Obsidianu kao u bilo kojem editoru teksta
 4. **Commit** — Spremi promjenu s kratkim opisom što si napravio/la
 5. **Push** — Pošalji promjene na GitHub
@@ -182,6 +183,35 @@ Ti pišeš samo tekst. Oblikovanje (fontovi, stilovi, numeracija) se primjenjuje
 
 **Gdje živi:** Na tvom računalu + automatski na GitHubu
 
+### Markdown → Word: kako izgleda transformacija
+
+Ovo je ono što ti pišeš u Obsidianu:
+
+```markdown
+## 2.1 Ciljevi projekta
+
+Projekt se provodi u **tri faze** s ciljem smanjenja potrošnje energije.
+
+- Faza 1: Analiza i planiranje
+- Faza 2: Provedba mjera  
+- Faza 3: Praćenje i izvještavanje
+```
+
+Ovo je ono što Quarto generira (Word dokument):
+
+```text
+2.1 Ciljevi projekta          <- Heading 2 stil, Calibri Bold
+
+Projekt se provodi u tri      <- tijelo teksta, Times 11pt
+faze s ciljem smanjenja...
+
+  • Faza 1: Analiza           <- lista s točkicama
+  • Faza 2: Provedba          
+  • Faza 3: Praćenje
+```
+
+Ti ne dodaješ fontove, veličine, boje — sve to definira Word predložak jednom, a Quarto ga primjenjuje automatski na svaki dokument.
+
 ***
 
 ## 1.6 Zašto je ovo bolje? – Konkretne prednosti
@@ -235,7 +265,8 @@ Do kraja priručnika, moći ćeš **samostalno:**
 
 ***
 
-**Sljedeće poglavlje:** [Poglavlje 2 – Instalacija i postavljanje okruženja ->](02-instalacija.md)
+
+
 
 
 

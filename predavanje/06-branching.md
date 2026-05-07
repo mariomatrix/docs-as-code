@@ -1,8 +1,8 @@
 ﻿---
-title: "Poglavlje 6 - Branching: radna grana"
+title: "Poglavlje 5 - Branching: radna grana"
 ---
 
-{{< pagebreak >}}
+
 
 > ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
 > 📋 **Preduvjet:** Vault otvoren, Obsidian Git plugin konfiguriran (Poglavlje 3 i 4)
@@ -145,7 +145,7 @@ Ako trebaš privremeno pogledati tuđi branch ili se prebaciti na drugi vlastiti
 
 ## 6.6 Povratak na main
 
-Kada završiš s radom na svom branchu i merge je obavljen (Poglavlje 9), možeš se vratiti na `main`:
+Kada završiš s radom na svom branchu i merge je obavljen (Poglavlje 3), možeš se vratiti na `main`:
 
 1. **`Ctrl + P`** -> `git checkout` -> **"Obsidian Git: Switch branch"**
 2. Iz popisa odaberi **`main`**
@@ -231,8 +231,10 @@ Nakon prvog pusha, Obsidian Git plugin prepoznaje branch i možeš nastaviti kor
 
 ***
 
-**<- Prethodno poglavlje:** [Poglavlje 5 – Podjela rada](05-podjela-rada.md)
-**Sljedeće poglavlje:** [Poglavlje 7 – Pisanje dokumenta u Obsidianu ->](07-pisanje-dokumenta.md)
+
+
+
+
 
 
 
