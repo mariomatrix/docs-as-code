@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "Priručnik: Documents-as-Code"
+  author: "Test / FGAG"
+  chapters:
+    - index.md
+    - 01-uvod.md
+    - 02-instalacija.md
+    - 03-obsidian-git.md
+    - 04-kloniranje-repozitorija.md
+    - 05-podjela-rada.md
+    - 06-branching.md
+    - 07-pisanje-dokumenta.md
+    - 08-pull-request.md
+    - 09-merge-u-main.md
+    - 10-word-template.md
+    - 11-github-actions.md
+    - 12-lokalni-pregled.md
+    - 13-dodaci.md
+   
+format:
+  pdf:
+    toc: true
+    number-sections: false
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{longtable}
+        \setlength{\LTleft}{0pt}
+        \setlength{\LTright}{0pt}
+        \renewcommand{\arraystretch}{1.3}
+        \setlength{\tabcolsep}{8pt}

@@ -63,3 +63,5 @@ Vaš rad je sada na sigurnom (GitHub) i automatski će se generirati konačni PD
 ## 5. Korisni savjeti
 
 * **Službeni obrasci (Word predlošci):** Ako vaša institucija zahtijeva točan izgled DOCX dokumenta (fontovi, zaglavlja), u vaš `_quarto.yml` konfiguracijski fajl jednostavno dodajte liniju pod docx format: `format: docx: reference-doc: putanja_do_predloska.docx`. Svi vaši dokumenti automatski će naslijediti izgled iz tog Worda!
+$ll2$ %% ddad %%
+$sqrt3$

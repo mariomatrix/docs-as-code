@@ -1,5 +1,4 @@
 #   
-Razgovor s Geminijem
 
 *da li se doi i orcid upotrebljavaju u izradi dokumentacije koja nije znanstvena
 
