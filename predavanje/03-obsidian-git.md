@@ -2,10 +2,12 @@
 title: "Poglavlje 3 - Obsidian Git plugin: instalacija i konfiguracija"
 ---
 
-> **Procijenjeno vrijeme:** 15–20 minuta
-> **Preduvjet:** Git instaliran (Poglavlje 2.1), PAT token kreiran i negdje pohranjen (Poglavlje 2.5)
+{{< pagebreak >}}
 
-> **Važno:** Ovo poglavlje radi **bez kloniranog repozitorija** — plugin instaliramo dok Obsidian radi na privremenom vaultu. U Poglavlju 4 otvorit ćemo pravi projektni repozitorij.
+> ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
+> 📋 **Preduvjet:** Git instaliran (Poglavlje 2.1), PAT token kreiran i negdje pohranjen (Poglavlje 2.5)
+
+> ⚠️ **Važno:** Ovo poglavlje radi **bez kloniranog repozitorija** — plugin instaliramo dok Obsidian radi na privremenom vaultu. U Poglavlju 4 otvorit ćemo pravi projektni repozitorij.
 
 ***
 
@@ -32,7 +34,7 @@ Da bi koristili community plugine, moramo ih najprije omogućiti:
 2. U lijevom izborniku klikni na **"Community plugins"**
 3. Vidjet ćeš upozorenje: *"Community plugins can execute arbitrary code..."*
 
-> **O sigurnosnom upozorenju:** Ovo upozorenje postoji jer community plugine pišu vanjski developeri. **Obsidian Git** je jedan od najpopularnijih i najprovjerenijih plugina s desetcima tisuća korisnika i otvorenim izvornim kodom. Prihvati upozorenje.
+> ℹ️ **O sigurnosnom upozorenju:** Ovo upozorenje postoji jer community plugine pišu vanjski developeri. **Obsidian Git** je jedan od najpopularnijih i najprovjerenijih plugina s desetcima tisuća korisnika i otvorenim izvornim kodom. Prihvati upozorenje.
 
 4. Klikni na **"Turn on community plugins"**
 5. Potvrdi klikom na **"Turn on"**
@@ -47,7 +49,7 @@ Da bi koristili community plugine, moramo ih najprije omogućiti:
 4. Klikni na gumb **"Install"**
 5. Nakon instalacije klikni na **"Enable"** (Omogući)
 
-**Provjera uspjeha:** U lijevom izborniku Settings-a trebala bi se pojaviti nova stavka **"Obsidian Git"** pod sekcijom *Plugin Options*.
+✅ **Provjera uspjeha:** U lijevom izborniku Settings-a trebala bi se pojaviti nova stavka **"Obsidian Git"** pod sekcijom *Plugin Options*.
 
 ***
 
@@ -66,9 +68,9 @@ Ovo je najvažniji korak — ovdje unosimo naš PAT token da Obsidian može komu
 | **Author name** | Tvoje ime i prezime | `Ana Kovač` |
 | **Author email** | E-mail vezan uz GitHub račun | `ana@primjer.com` |
 
-> **Savjet:** Polje za token izgleda kao obično tekstualno polje — token upisuješ ili lijepiš (Ctrl+V) direktno u njega. Ne skrivaj ga u lozinkovnom manageru sada — Obsidian ga sam sigurno pohranjuje.
+> 💡 **Savjet:** Polje za token izgleda kao obično tekstualno polje — token upisuješ ili lijepiš (Ctrl+V) direktno u njega. Ne skrivaj ga u lozinkovnom manageru sada — Obsidian ga sam sigurno pohranjuje.
 
-> **Upozorenje:** Author name i Author email moraju biti **isti** kao oni koje si postavio/la u Git konfiguraciji (Poglavlje 2.1, Korak 4). Inače će tvoje promjene biti pripisane drugom identitetu.
+> ⚠️ **Upozorenje:** Author name i Author email moraju biti **isti** kao oni koje si postavio/la u Git konfiguraciji (Poglavlje 2.1, Korak 4). Inače će tvoje promjene biti pripisane drugom identitetu.
 
 ***
 
@@ -86,7 +88,7 @@ Skrolaj do sekcije **"Automatic"**:
 | **Pull interval (minutes)** | `0` (isključeno) | Automatski pull svakih N minuta — za početnike isključi, radi ručno |
 | **Push on commit** | Uključeno | Nakon svakog commita, automatski šalje promjene na GitHub |
 
-> **Zašto isključiti automatski pull interval?** Automatski pull može prekinuti pisanje u neočekivanom trenutku. Bolja navika za početnike je: ručno povuci promjene ujutro kada sjedneš raditi.
+> 💡 **Zašto isključiti automatski pull interval?** Automatski pull može prekinuti pisanje u neočekivanom trenutku. Bolja navika za početnike je: ručno povuci promjene ujutro kada sjedneš raditi.
 
 ### Commit poruke
 
@@ -97,7 +99,7 @@ Skrolaj do sekcije **"Commit"**:
 | **Commit message** | `{{date}} - {{hostname}}: {{numFiles}} datoteka izmijenjeno` |
 | **Date format** | `YYYY-MM-DD HH:mm` |
 
-> **Objašnjenje commit poruke:** `{{date}}` automatski upiše datum i vrijeme, `{{hostname}}` ime tvog računala, `{{numFiles}}` broj izmijenjenih datoteka. Rezultat izgleda ovako: `2024-03-15 09:30 - ANA-LAPTOP: 2 datoteke izmijenjeno`.
+> 💡 **Objašnjenje commit poruke:** `{{date}}` automatski upiše datum i vrijeme, `{{hostname}}` ime tvog računala, `{{numFiles}}` broj izmijenjenih datoteka. Rezultat izgleda ovako: `2024-03-15 09:30 - ANA-LAPTOP: 2 datoteke izmijenjeno`.
 
 ***
 
@@ -159,7 +161,7 @@ Current branch: main  |  v0  ^2
 | Push na GitHub | (nakon commita, ako je uključeno) | Gumb ^ Push |
 | Kreiranje novog brancha | Ne | Command Palette (objašnjeno u Poglavlju 6) |
 
-> **Preporučeni dnevni ritam:**
+> 💡 **Preporučeni dnevni ritam:**
 > 1. Otvori Obsidian -> automatski pull preuzima novosti
 > 2. Piši dokument
 > 3. Kada završiš logičnu cjelinu -> Stage All -> Commit
@@ -167,7 +169,7 @@ Current branch: main  |  v0  ^2
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -177,12 +179,15 @@ Current branch: main  |  v0  ^2
 | **Push on commit** | Automatsko slanje na GitHub nakon svakog commita |
 | **Pull on startup** | Automatsko preuzimanje izmjena kolega pri pokretanju Obsidiana |
 
-> **Napomena:** Plugin si konfigurirao/la u privremenom vaultu. Kada u Poglavlju 4 otvorimo pravi repozitorij kao novi vault, **morat ćeš ponoviti instalaciju i konfiguraciju plugina** — postavke se pohranjuju po vaultu, ne globalno. Proces je isti, a ovaj put znaš točno što radiš.
+> ℹ️ **Napomena:** Plugin si konfigurirao/la u privremenom vaultu. Kada u Poglavlju 4 otvorimo pravi repozitorij kao novi vault, **morat ćeš ponoviti instalaciju i konfiguraciju plugina** — postavke se pohranjuju po vaultu, ne globalno. Proces je isti, a ovaj put znaš točno što radiš.
 
 ***
 
 **<- Prethodno poglavlje:** [Poglavlje 2 – Instalacija](02-instalacija.md)
 **Sljedeće poglavlje:** [Poglavlje 4 – Kloniranje repozitorija i kreiranje Obsidian vaulta ->](04-kloniranje-repozitorija.md)
+
+
+
 
 
 

@@ -2,8 +2,10 @@
 title: "Poglavlje 9 - Merge u main: spajanje promjena"
 ---
 
-> **Procijenjeno vrijeme:** 15–20 minuta
-> **Preduvjet:** Otvoren i pregledan Pull Request (Poglavlje 8)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
+> 📋 **Preduvjet:** Otvoren i pregledan Pull Request (Poglavlje 8)
 
 ***
 
@@ -26,7 +28,7 @@ Merge se radi **isključivo** kada su ispunjena sva tri uvjeta:
 [ ] Nema konflikata s main granom (GitHub će jasno javiti ako ih ima)
 ```
 
-> **Upozorenje:** Nikad ne mergeaj vlastiti PR bez pregleda drugog člana tima — čak i ako si siguran/na da je sve ispravno. Pregled nije samo o greškama, nego i o konzistentnosti cijelog dokumenta.
+> ⚠️ **Upozorenje:** Nikad ne mergeaj vlastiti PR bez pregleda drugog člana tima — čak i ako si siguran/na da je sve ispravno. Pregled nije samo o greškama, nego i o konzistentnosti cijelog dokumenta.
 
 ***
 
@@ -42,7 +44,7 @@ U praksi, to znači:
 | Srednji tim (4+) | Voditelj dokumentacije mergea sve PR-ove |
 | Formalni projekt | Samo maintainer, uz obavezni Approve |
 
-> **Preporuka:** Postavi pravilo u timu da **autor ne mergea vlastiti PR**. Četiri oka uvijek vide više od dva.
+> 💡 **Preporuka:** Postavi pravilo u timu da **autor ne mergea vlastiti PR**. Četiri oka uvijek vide više od dva.
 
 ***
 
@@ -72,7 +74,7 @@ Na dnu PR stranice vidiš status provjera:
 
 Ako su sve tri zelene kvačice — spreman si za merge.
 
-> **Ako vidiš crveni X uz "Merge conflicts":** Vidi poglavlje 9.5 — konflikte treba riješiti prije mergea.
+> ⚠️ **Ako vidiš crveni X uz "Merge conflicts":** Vidi poglavlje 9.5 — konflikte treba riješiti prije mergea.
 
 ### Korak 3: Odaberi tip mergea
 
@@ -92,7 +94,7 @@ Klikni na **strelicu v** pored gumba "Merge pull request" — pojavljuju se tri 
 2. Pojavljuje se polje za potvrdu s automatski generiranom porukom — možeš je ostaviti kakva jest ili kratko urediti
 3. Klikni **"Confirm merge"**
 
-**Provjera uspjeha:** GitHub prikazuje:
+✅ **Provjera uspjeha:** GitHub prikazuje:
 ```text
 Pull request successfully merged and closed
 ```
@@ -106,7 +108,7 @@ Odmah nakon mergea GitHub nudi gumb:
 
 **Klikni ga.** Radni branch više nije potreban — promjene su u `main`. Brisanje brancha ne briše promjene, samo čisti repozitorij od zastarjelih grana.
 
-> **Zašto brisati branch?** Repozitorij s desetak starih, zastarjelih brancheva postaje zbunjujuć. Čist repozitorij = samo aktivni branchevi su vidljivi.
+> 💡 **Zašto brisati branch?** Repozitorij s desetak starih, zastarjelih brancheva postaje zbunjujuć. Čist repozitorij = samo aktivni branchevi su vidljivi.
 
 ***
 
@@ -173,7 +175,7 @@ Konflikte je **najlakše riješiti na GitHubu**, direktno u pregledniku, za jedn
 6. Klikni **"Commit merge"**
 7. Nastavi s normalnim mergeom
 
-> **Za složenije konflikte** koji zahvaćaju više datoteka ili veće dijelove teksta — obavijesti maintainera i riješite zajedno. Ne pogađaj.
+> ⚠️ **Za složenije konflikte** koji zahvaćaju više datoteka ili veće dijelove teksta — obavijesti maintainera i riješite zajedno. Ne pogađaj.
 
 ### Kako spriječiti konflikte
 
@@ -223,7 +225,7 @@ git branch -d ana-kovac/uvod
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -234,12 +236,15 @@ git branch -d ana-kovac/uvod
 | **Resolve conflicts** | GitHub alat za ručno rješavanje konflikata u pregledniku |
 | **Pull nakon mergea** | Lokalni `main` se mora ručno ažurirati nakon online mergea |
 
-> **Zlatno pravilo:** Merge je završetak jednog ciklusa rada, ne kraj projekta. Nakon svakog mergea odmah kreiraš novi branch za sljedeći zadatak. Repozitorij je živ — uvijek postoji aktivan posao u tijeku.
+> 💡 **Zlatno pravilo:** Merge je završetak jednog ciklusa rada, ne kraj projekta. Nakon svakog mergea odmah kreiraš novi branch za sljedeći zadatak. Repozitorij je živ — uvijek postoji aktivan posao u tijeku.
 
 ***
 
 **<- Prethodno poglavlje:** [Poglavlje 8 – Pull Request](08-pull-request.md)
 **Sljedeće poglavlje:** [Poglavlje 10 – Word DOCX template: koncept ->](10-word-template.md)
+
+
+
 
 
 

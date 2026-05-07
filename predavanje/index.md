@@ -7,8 +7,9 @@ date: "2026-05-06"
 
 # Predgovor
 
-Dobrodošli u službeni priručnik. Ova knjiga je generirana automatski iz Markdown datoteka.
-
+Dobrodošli! 
+Ovaj priručnik je generirana automatski iz Markdown datoteka.
+Pri kreiranju sadržaja korišteni su alati umjetne inteligencije.
 
 
 

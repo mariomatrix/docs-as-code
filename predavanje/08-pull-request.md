@@ -2,8 +2,10 @@
 title: "Poglavlje 8 - Pull Request: predaja rada na pregled"
 ---
 
-> **Procijenjeno vrijeme:** 15–20 minuta
-> **Preduvjet:** Završeno pisanje na vlastitom branchu, barem jedan commit pushean na GitHub (Poglavlje 7)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
+> 📋 **Preduvjet:** Završeno pisanje na vlastitom branchu, barem jedan commit pushean na GitHub (Poglavlje 7)
 
 ***
 
@@ -45,7 +47,7 @@ Razlika od klasičnog pregleda dokumenta: sve je vidljivo, sve je zabilježeno, 
 | **Recenzent** | Kolega iz tima ili voditelj | Pregledava, komentira, odobrava ili traži izmjene |
 | **Maintainer** | Voditelj projekta | Ima pravo mergati u main — može biti ista osoba kao recenzent |
 
-> **Savjet:** Dogovorite u timu tko je maintainer — ta osoba ima finalnu odgovornost za kvalitetu `main` grane. Obično je to voditelj dokumentacije.
+> 💡 **Savjet:** Dogovorite u timu tko je maintainer — ta osoba ima finalnu odgovornost za kvalitetu `main` grane. Obično je to voditelj dokumentacije.
 
 ***
 
@@ -128,7 +130,7 @@ Na desnoj strani obrasca, pod "Reviewers":
 2. Upiši GitHub korisničko ime kolege koji treba pregledati
 3. Odaberi ga s popisa
 
-> **Savjet:** Recenzent dobiva e-mail obavijest. Ako žuriš, dodatno ga obavijesti porukama — GitHub notifikacije ponekad završe u spamu.
+> 💡 **Savjet:** Recenzent dobiva e-mail obavijest. Ako žuriš, dodatno ga obavijesti porukama — GitHub notifikacije ponekad završe u spamu.
 
 ***
 
@@ -147,7 +149,7 @@ Ako tim nije postavio labels, preskoči ovaj korak.
 
 Klikni zeleni gumb **"Create pull request"**.
 
-**Provjera uspjeha:** PR je otvoren i vidljiv pod karticom "Pull requests" repozitorija. Recenzent je dobio obavijest.
+✅ **Provjera uspjeha:** PR je otvoren i vidljiv pod karticom "Pull requests" repozitorija. Recenzent je dobio obavijest.
 
 ***
 
@@ -229,7 +231,7 @@ Kratka kontrolna lista koju prođeš sam/a prije nego tražiš pregled:
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -244,6 +246,9 @@ Kratka kontrolna lista koju prođeš sam/a prije nego tražiš pregled:
 
 **<- Prethodno poglavlje:** [Poglavlje 7 – Pisanje dokumenta](07-pisanje-dokumenta.md)
 **Sljedeće poglavlje:** [Poglavlje 9 – Merge u main: spajanje promjena ->](09-merge-u-main.md)
+
+
+
 
 
 

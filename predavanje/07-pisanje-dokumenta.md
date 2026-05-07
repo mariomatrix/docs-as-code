@@ -1,9 +1,11 @@
----
+﻿---
 title: "Poglavlje 7 - Pisanje dokumenta"
 ---
 
-> **Procijenjeno vrijeme:** 20–30 minuta
-> **Preduvjet:** Vault otvoren, vlastiti branch kreiran (Poglavlje 6)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 20–30 minuta
+> 📋 **Preduvjet:** Vault otvoren, vlastiti branch kreiran (Poglavlje 6)
 
 ***
 
@@ -57,7 +59,7 @@ A Quarto od toga generira lijepo formatirani Word dokument s automatski primijen
 ### Naslov razine 3  (Heading 3 u Wordu)
 ```
 
-> **Važno:** Između `#` i teksta naslova mora biti **razmak**. `#Naslov` ne funkcionira, `# Naslov` funkcionira.
+> ⚠️ **Važno:** Između `#` i teksta naslova mora biti **razmak**. `#Naslov` ne funkcionira, `# Naslov` funkcionira.
 
 ***
 
@@ -91,7 +93,7 @@ Prikazuje se kao: **podebljani tekst**, *kurziv*, ***podebljani kurziv***
 3. Treća stavka
 ```
 
-> **Savjet:** Kod numerirane liste ne moraš paziti na redoslijed brojeva — možeš pisati sve `1.` i Quarto će automatski ispravno numerirati pri renderiranju.
+> 💡 **Savjet:** Kod numerirane liste ne moraš paziti na redoslijed brojeva — možeš pisati sve `1.` i Quarto će automatski ispravno numerirati pri renderiranju.
 
 ***
 
@@ -111,7 +113,7 @@ Prikazuje se kao:
 | Sadržaj ćelije | Sadržaj ćelije | Sadržaj ćelije |
 | Drugi redak | Drugi redak | Drugi redak |
 
-> **Savjet:** Ne moraš ručno poravnavati crtice i stupce — Obsidian to radi automatski kada pritisneš Tab unutar tablice. Možeš i koristiti plugin **"Advanced Tables"** koji olakšava rad s tablicama.
+> 💡 **Savjet:** Ne moraš ručno poravnavati crtice i stupce — Obsidian to radi automatski kada pritisneš Tab unutar tablice. Možeš i koristiti plugin **"Advanced Tables"** koji olakšava rad s tablicama.
 
 ***
 
@@ -241,7 +243,7 @@ $$
 
 : Česti LaTeX simboli {tbl-colwidths="[30,35,35]"}
 
-> **Savjet:** Obsidian u Reading View prikazuje formule renderiranjem u stvarnom vremenu — vidiš rezultat dok pišeš. Ako formula ne izgleda ispravno, najčešći uzrok je pogrešna sintaksa u LaTeX kodu (nedostaje `}` ili `{`).
+> 💡 **Savjet:** Obsidian u Reading View prikazuje formule renderiranjem u stvarnom vremenu — vidiš rezultat dok pišeš. Ako formula ne izgleda ispravno, najčešći uzrok je pogrešna sintaksa u LaTeX kodu (nedostaje `}` ili `{`).
 
 > **Napomena za Word output:** Quarto pri renderiranju u `.docx` pretvara LaTeX formule u Word-ove native matematičke objekte (OMath). Ne moraš ništa posebno raditi — formula u Markdownu automatski postaje ispravna formula u Wordu.
 
@@ -263,7 +265,7 @@ date: "2024-03-15"
 ***
 ```
 
-> **Upozorenje:** YAML zaglavlje mora biti **točno na prvom retku** datoteke, bez ikakvog teksta ispred. Ako pomiješaš format (npr. zaboraviš zatvoriti `---`), Quarto neće moći renderirati dokument.
+> ⚠️ **Upozorenje:** YAML zaglavlje mora biti **točno na prvom retku** datoteke, bez ikakvog teksta ispred. Ako pomiješaš format (npr. zaboraviš zatvoriti `---`), Quarto neće moći renderirati dokument.
 
 ### Kompletna struktura datoteke
 
@@ -304,7 +306,7 @@ Repozitorij sadrži predloške u folderu `templates/` koji definiraju strukturu 
 4. Na vrh datoteke kopiraj YAML zaglavlje iz predloška
 5. Počni pisati sadržaj ispod zaglavlja
 
-> **Savjet:** Otvori postojeću `.qmd` datoteku iz repozitorija kao referencu — vidiš točan format zaglavlja i strukturu koji projekt koristi.
+> 💡 **Savjet:** Otvori postojeću `.qmd` datoteku iz repozitorija kao referencu — vidiš točan format zaglavlja i strukturu koji projekt koristi.
 
 ***
 
@@ -324,7 +326,7 @@ Vidiš formatiran tekst — naslovi su naslovi, bold je bold, tablice su tablice
 - Klikni na ikonu **knjige** u gornjem desnom kutu editora
 - Ili pritisni `Ctrl + E`
 
-> **Savjet:** Postoji i **Live Preview** mod koji prikazuje formatiran tekst dok pišeš — kao Word. Uključiš ga u Settings -> Editor -> "Default editing mode" -> "Live Preview". Preporučujemo za početnike.
+> 💡 **Savjet:** Postoji i **Live Preview** mod koji prikazuje formatiran tekst dok pišeš — kao Word. Uključiš ga u Settings -> Editor -> "Default editing mode" -> "Live Preview". Preporučujemo za početnike.
 
 ***
 
@@ -356,7 +358,7 @@ Svaki radni dan (ili radna sesija) trebao bi izgledati ovako:
   8. Zatvori Obsidian
 ```
 
-> **Zašto commit svakih 30–60 minuta?** Svaki commit je točka na koju se možeš **vratiti** ako nešto krene naopako. Ako pišeš 3 sata bez commita i slučajno obrišeš poglavlje, nemaš se gdje vratiti.
+> 💡 **Zašto commit svakih 30–60 minuta?** Svaki commit je točka na koju se možeš **vratiti** ako nešto krene naopako. Ako pišeš 3 sata bez commita i slučajno obrišeš poglavlje, nemaš se gdje vratiti.
 
 ***
 
@@ -395,7 +397,7 @@ Commit poruka treba odgovoriti na: **"Što sam napravio/la?"**
 
 Ako je **"Push on commit"** uključen (Poglavlje 3.5), push se dogodi automatski. Ako nije, klikni gumb **^ Push** u Source Control panelu.
 
-**Provjera uspjeha:** U statusnoj traci `^0` znači da nema čekajućih commitova za push — sve je na GitHubu.
+✅ **Provjera uspjeha:** U statusnoj traci `^0` znači da nema čekajućih commitova za push — sve je na GitHubu.
 
 ***
 
@@ -414,11 +416,11 @@ git commit -m "Dodati poglavlje 1.2 - Ciljevi projekta"
 git push origin ana-kovac/uvod
 ```
 
-> **Savjet:** `git add .` (s točkom na kraju) dodaje **sve** izmijenjene datoteke odjednom. Točka znači "sve u trenutnom folderu i podfolderima".
+> 💡 **Savjet:** `git add .` (s točkom na kraju) dodaje **sve** izmijenjene datoteke odjednom. Točka znači "sve u trenutnom folderu i podfolderima".
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -434,6 +436,9 @@ git push origin ana-kovac/uvod
 
 **<- Prethodno poglavlje:** [Poglavlje 6 – Branching](06-branching.md)
 **Sljedeće poglavlje:** [Poglavlje 8 – Pull Request: predaja rada na pregled ->](08-pull-request.md)
+
+
+
 
 
 

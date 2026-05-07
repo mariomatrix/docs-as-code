@@ -2,9 +2,11 @@
 title: "Poglavlje 2 - Instalacija i postavljanje okruzenja"
 ---
 
-> **Procijenjeno vrijeme:** 60–90 minuta (jednokratno)
-> **Primarno za:** Windows 10/11
-> **Korisnici macOS-a:** Tamo gdje se postupak razlikuje, označeno je posebnom napomenom.
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 60–90 minuta (jednokratno)
+> 🖥️ **Primarno za:** Windows 10/11
+> 🍎 **Korisnici macOS-a:** Tamo gdje se postupak razlikuje, označeno je posebnom napomenom.
 
 U ovom poglavlju instaliramo sve alate i kreiramo račune koje ćeš koristiti svaki dan. Ovo radiš **samo jednom** — nakon postavljanja, svakodnevni rad ne zahtijeva ponovnu instalaciju.
 
@@ -31,7 +33,7 @@ Git je program koji radi u pozadini i **prati sve promjene** u tvojim datotekama
 4. Na ekranu **"Adjusting your PATH environment"** — obavezno odaberi **"Git from the command line and also from 3rd-party software"** (srednja opcija). Ovo omogućava Obsidianu da pronađe Git.
 5. Sve ostalo — klikaj **Next** i na kraju **Install**
 
-> **Upozorenje:** Ako instalacijski čarobnjak pita za administratorsku lozinku, upiši ju — instalacija zahtijeva administratorska prava.
+> ⚠️ **Upozorenje:** Ako instalacijski čarobnjak pita za administratorsku lozinku, upiši ju — instalacija zahtijeva administratorska prava.
 
 ### Korak 3: Provjera instalacije
 
@@ -43,12 +45,12 @@ Git je program koji radi u pozadini i **prati sve promjene** u tvojim datotekama
 git --version
 ```
 
-**Provjera uspjeha:** Trebao/la bi vidjeti nešto poput:
+✅ **Provjera uspjeha:** Trebao/la bi vidjeti nešto poput:
 ```cmd
 git version 2.44.0.windows.1
 ```
 
-> **Ako vidiš grešku** `'git' is not recognized...` — Git nije ispravno instaliran. Ponovi instalaciju i provjeri jesi li na koraku 4 odabrao/la srednju opciju za PATH.
+> ⚠️ **Ako vidiš grešku** `'git' is not recognized...` — Git nije ispravno instaliran. Ponovi instalaciju i provjeri jesi li na koraku 4 odabrao/la srednju opciju za PATH.
 
 ### Korak 4: Konfiguracija identiteta
 
@@ -64,9 +66,9 @@ git config --global user.name "Ime Prezime"
 git config --global user.email "tvoj.email@primjer.com"
 ```
 
-> **Savjet:** Koristi **isti e-mail koji ćeš koristiti za GitHub račun** (kreiramo ga u koraku 2.4). To pomaže GitHubu da ispravno poveže tvoje doprinose s tvojim profilom.
+> 💡 **Savjet:** Koristi **isti e-mail koji ćeš koristiti za GitHub račun** (kreiramo ga u koraku 2.4). To pomaže GitHubu da ispravno poveže tvoje doprinose s tvojim profilom.
 
-**Provjera:** Provjeri jesu li podaci ispravno uneseni:
+✅ **Provjera:** Provjeri jesu li podaci ispravno uneseni:
 ```cmd
 git config --global user.name
 git config --global user.email
@@ -101,7 +103,7 @@ Kada se Obsidian prvi put pokrene, prikazuje se ekran dobrodošlice s opcijama. 
 
 Možeš zatvoriti Obsidian za sada.
 
-**Provjera uspjeha:** Obsidian se pokrenuo i prikazuje početni ekran.
+✅ **Provjera uspjeha:** Obsidian se pokrenuo i prikazuje početni ekran.
 
 ***
 
@@ -133,9 +135,9 @@ Quarto je alat koji radi u pozadini — pretvara tvoje tekstualne datoteke u fin
 quarto check
 ```
 
-**Provjera uspjeha:** Nakon nekoliko sekundi vidjet ćeš popis provjera. Važno je da nema crvenih grešaka za osnovne komponente. Upozorenja (žuta) su u redu.
+✅ **Provjera uspjeha:** Nakon nekoliko sekundi vidjet ćeš popis provjera. Važno je da nema crvenih grešaka za osnovne komponente. Upozorenja (žuta) su u redu.
 
-> **Ako naredba nije prepoznata:** Restart računala i pokušaj ponovo — instalacija Quarta ponekad zahtijeva ponovno pokretanje računala da bi se PATH ažurirao.
+> ⚠️ **Ako naredba nije prepoznata:** Restart računala i pokušaj ponovo — instalacija Quarta ponekad zahtijeva ponovno pokretanje računala da bi se PATH ažurirao.
 
 ***
 
@@ -194,7 +196,7 @@ Na ekranu za kreiranje tokena:
 - **Note** (naziv): Upiši npr. `Obsidian-Git-token` — da znaš čemu služi
 - **Expiration** (trajanje): Odaberi **90 days** ili **1 year** ovisno o preferenciji tima
 
-> **Savjet:** Kada token istekne, moraš kreirati novi i ponoviti korake 3 i 4 iz ovog poglavlja. Postavi podsjetnik u kalendar.
+> 💡 **Savjet:** Kada token istekne, moraš kreirati novi i ponoviti korake 3 i 4 iz ovog poglavlja. Postavi podsjetnik u kalendar.
 
 - **Odaberi ovlasti (scopes):** Stavi kvačicu samo na **`repo`** — ovo je sve što trebaš za rad s repozitorijem
 
@@ -202,7 +204,7 @@ Na ekranu za kreiranje tokena:
 
 ### Korak 3: Kopiranje i pohrana tokena
 
-> **VAŽNO:** Token ćeš vidjeti **samo jednom**. Kada zatvoriš ovu stranicu, više ga nećeš moći vidjeti. GitHub pokazuje token samo u trenutku kreiranja.
+> ⚠️ **Važno:** Token ćeš vidjeti **samo jednom**. Kada zatvoriš ovu stranicu, više ga nećeš moći vidjeti. GitHub pokazuje token samo u trenutku kreiranja.
 
 1. Klikni na ikonu kopiranja pored tokena (ili označi tekst i kopiraj Ctrl+C)
 2. Odmah ga spremi na **sigurno mjesto** — primjeri:
@@ -219,9 +221,9 @@ ghp_ABCDEFGHijklmnopQRSTUVWXYZ123456789
 
 Token ćeš upisati direktno u **Obsidian Git plugin** u sljedećem poglavlju — nema potrebe za dodatnim koracima ovdje.
 
-> **Savjet:** Ostavi token kopiran u Notepadu ili na sigurnom mjestu dok ne završiš postavljanje plugina u Poglavlju 3 — tamo ćeš ga unijeti na točno određeno mjesto u postavkama.
+> 💡 **Savjet:** Ostavi token kopiran u Notepadu ili na sigurnom mjestu dok ne završiš postavljanje plugina u Poglavlju 3 — tamo ćeš ga unijeti na točno određeno mjesto u postavkama.
 
-**Provjera uspjeha:** Token je kreiran i pohranjen na sigurnom mjestu, spreman za unos u Obsidian.
+✅ **Provjera uspjeha:** Token je kreiran i pohranjen na sigurnom mjestu, spreman za unos u Obsidian.
 
 ***
 
@@ -237,10 +239,10 @@ Obsidian pohranjuje svoje postavke u skriveni folder `.obsidian/`. Taj folder sa
 
 | Sadržaj | Treba dijeliti? | Razlog |
 |---------|----------------|--------|
-| `plugins/` | **Da** | Da svi imaju iste plugine |
-| `app.json` | **Da** | Zajedničke postavke aplikacije |
-| `workspace.json` | Ne | Osobne postavke prozora — razlikuju se po računalu |
-| `cache` | Ne | Privremene datoteke — automatski se kreiraju |
+| `plugins/` | ✅ **Da** | Da svi imaju iste plugine |
+| `app.json` | ✅ **Da** | Zajedničke postavke aplikacije |
+| `workspace.json` | ❌ **Ne** | Osobne postavke prozora — razlikuju se po računalu |
+| `cache` | ❌ **Ne** | Privremene datoteke — automatski se kreiraju |
 
 ### Primjer .gitignore za ovaj projekt
 
@@ -268,11 +270,11 @@ desktop.ini        # Windows postavke foldera
 /.quarto/
 ```
 
-> **Savjet:** Ne moraš mijenjati `.gitignore` datoteku. Administrator projekta već je postavio ispravne postavke u repozitoriju koji ćeš klonirati. Ovo je samo objašnjenje zašto neke datoteke vidiš, a neke ne.
+> 💡 **Savjet:** Ne moraš mijenjati `.gitignore` datoteku. Administrator projekta već je postavio ispravne postavke u repozitoriju koji ćeš klonirati. Ovo je samo objašnjenje zašto neke datoteke vidiš, a neke ne.
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Alat/Korak | Status |
 |------------|--------|
@@ -283,12 +285,15 @@ desktop.ini        # Windows postavke foldera
 | Pozivnica za repozitorij prihvaćena | [ ] |
 | PAT kreiran i sigurno spremljen | [ ] |
 
-> **Savjet:** Iskoristi gornju tablicu kao checklistu — označi svaki korak koji si dovršio/la. Ako nešto nije funkcioniralo, ne prelazi na sljedeće poglavlje — svaki alat ovisi o prethodnom.
+> 💡 **Savjet:** Iskoristi gornju tablicu kao checklistu — označi svaki korak koji si dovršio/la. Ako nešto nije funkcioniralo, ne prelazi na sljedeće poglavlje — svaki alat ovisi o prethodnom.
 
 ***
 
 **<- Prethodno poglavlje:** [Poglavlje 1 – Uvod](01-uvod.md)
 **Sljedeće poglavlje:** [Poglavlje 3 – Obsidian Git plugin ->](03-obsidian-git.md)
+
+
+
 
 
 

@@ -2,8 +2,10 @@
 title: "Poglavlje 6 - Branching: radna grana"
 ---
 
-> **Procijenjeno vrijeme:** 15–20 minuta
-> **Preduvjet:** Vault otvoren, Obsidian Git plugin konfiguriran (Poglavlje 3 i 4)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
+> 📋 **Preduvjet:** Vault otvoren, Obsidian Git plugin konfiguriran (Poglavlje 3 i 4)
 
 ***
 
@@ -117,14 +119,14 @@ Pojavljuje se polje za unos naziva:
 
 Upiši naziv prema pravilima iz poglavlja 6.3 i pritisni **Enter**.
 
-**Provjera uspjeha:** U statusnoj traci na dnu Obsidiana naziv brancha se promijenio:
+✅ **Provjera uspjeha:** U statusnoj traci na dnu Obsidiana naziv brancha se promijenio:
 
 ```text
 Prije:  Current branch: main  |  v0  ^0
 Nakon:  Current branch: ana-kovac/uvod  |  v0  ^0
 ```
 
-> **Savjet:** Uvijek provjeri statusnu traku prije nego počneš pisati — mora pisati tvoj branch, ne `main`.
+> 💡 **Savjet:** Uvijek provjeri statusnu traku prije nego počneš pisati — mora pisati tvoj branch, ne `main`.
 
 ***
 
@@ -137,7 +139,7 @@ Ako trebaš privremeno pogledati tuđi branch ili se prebaciti na drugi vlastiti
 3. Odaberi: **"Obsidian Git: Switch branch"**
 4. Iz popisa odaberi branch na koji se želiš prebaciti
 
-> **Upozorenje:** Prije prebacivanja brancha uvijek napravi **commit** svih svojih promjena. Ako imaš nesačuvane izmjene i prebacuješ branch, Obsidian Git može javiti grešku ili — u rijetkim slučajevima — promjene mogu biti vidljive na krivom branchu.
+> ⚠️ **Upozorenje:** Prije prebacivanja brancha uvijek napravi **commit** svih svojih promjena. Ako imaš nesačuvane izmjene i prebacuješ branch, Obsidian Git može javiti grešku ili — u rijetkim slučajevima — promjene mogu biti vidljive na krivom branchu.
 
 ***
 
@@ -214,7 +216,7 @@ Nakon prvog pusha, Obsidian Git plugin prepoznaje branch i možeš nastaviti kor
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -231,6 +233,9 @@ Nakon prvog pusha, Obsidian Git plugin prepoznaje branch i možeš nastaviti kor
 
 **<- Prethodno poglavlje:** [Poglavlje 5 – Podjela rada](05-podjela-rada.md)
 **Sljedeće poglavlje:** [Poglavlje 7 – Pisanje dokumenta u Obsidianu ->](07-pisanje-dokumenta.md)
+
+
+
 
 
 

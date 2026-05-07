@@ -2,8 +2,10 @@
 title: "Poglavlje 10 - Word DOCX template: koncept"
 ---
 
-> **Procijenjeno vrijeme čitanja:** 10 minuta
-> **Preduvjet:** Razumijevanje osnovnog toka rada (Poglavlja 1–9)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme čitanja:** 10 minuta
+> 📋 **Preduvjet:** Razumijevanje osnovnog toka rada (Poglavlja 1–9)
 
 ***
 
@@ -81,13 +83,13 @@ Word predložak definira izgled svakog elementa dokumenta:
 | Numeracija stranica | Footer stil |
 | Zaglavlje dokumenta | Header stil |
 
-> **Važna implikacija:** Ako u Obsidianu pišeš `# Poglavlje 1` i u predlošku stil Heading 1 ima definiranu automatsku numeraciju, finalni dokument će automatski ispisati `1. Poglavlje 1` — bez da si ti ručno upisivao/la broj. Formatiranje i numeracija su potpuno automatski.
+> 💡 **Važna implikacija:** Ako u Obsidianu pišeš `# Poglavlje 1` i u predlošku stil Heading 1 ima definiranu automatsku numeraciju, finalni dokument će automatski ispisati `1. Poglavlje 1` — bez da si ti ručno upisivao/la broj. Formatiranje i numeracija su potpuno automatski.
 
 ***
 
 ## 10.5 Kako modificirati template
 
-> **Upozorenje:** Modificiranje predloška mijenja izgled **svakog budućeg dokumenta** generiranog iz ovog repozitorija. Ovu promjenu radi isključivo **maintainer projekta**, po dogovoru s timom ili naručiteljem.
+> ⚠️ **Upozorenje:** Modificiranje predloška mijenja izgled **svakog budućeg dokumenta** generiranog iz ovog repozitorija. Ovu promjenu radi isključivo **maintainer projekta**, po dogovoru s timom ili naručiteljem.
 
 Ako ipak trebaš promijeniti izgled:
 
@@ -115,7 +117,7 @@ Template ne sadrži pravi sadržaj dokumenta — sadrži samo ogledne primjere t
 2. U Obsidianu: Stage All -> Commit -> Push
 3. Otvori PR kao i za svaku drugu promjenu
 
-> **Savjet:** Kada modificiraš template, u commit poruci napiši točno što si promijenio/la: npr. `Template: promjena fonta naslova na Arial 14pt`. Ovo je važno jer svaka promjena predloška utječe na sve buduće renderove.
+> 💡 **Savjet:** Kada modificiraš template, u commit poruci napiši točno što si promijenio/la: npr. `Template: promjena fonta naslova na Arial 14pt`. Ovo je važno jer svaka promjena predloška utječe na sve buduće renderove.
 
 ***
 
@@ -154,7 +156,7 @@ Kao autor, tvoj jedini posao je **ispravno koristiti Markdown oznake**. Sve osta
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -170,6 +172,9 @@ Kao autor, tvoj jedini posao je **ispravno koristiti Markdown oznake**. Sve osta
 
 **<- Prethodno poglavlje:** [Poglavlje 9 – Merge u main](09-merge-u-main.md)
 **Sljedeće poglavlje:** [Poglavlje 11 – GitHub Actions: pregled automatizacije ->](11-github-actions.md)
+
+
+
 
 
 

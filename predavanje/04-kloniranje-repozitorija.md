@@ -2,6 +2,8 @@
 title: "Poglavlje 4 - Kloniranje repozitorija i kreiranje Obsidian vaulta"
 ---
 
+{{< pagebreak >}}
+
 **Procijenjeno vrijeme:** 10–15 minuta
 
 **Cilj:** Preuzeti projekt s GitHuba na računalo i otvoriti ga u Obsidianu.
@@ -38,7 +40,7 @@ Sada ćemo klonirati testni repozitorij na tvoju Radnu površinu (Desktop).
 
 ℹ️ **Napomena o prijavi:** Ako repozitorij nije javno dostupan, u ovom trenutku iskočit će prozor ili će terminal tražiti tvoje GitHub korisničko ime i lozinku. Kao lozinku **obavezno upiši onaj PAT token** koji si kreirao/la i spremio/la u Poglavlju 2\! (Ako si u Poglavlju 2 uspješno podesio/la Credential Manager, ovaj korak će se možda odraditi potpuno automatski).
 
-**Provjera uspjeha:** Smanji sve prozore i pogledaj svoju Radnu površinu. Tamo bi se sada trebao nalaziti novi folder pod nazivom EU-Project-Template.
+✅ **Provjera uspjeha:** Smanji sve prozore i pogledaj svoju Radnu površinu. Tamo bi se sada trebao nalaziti novi folder pod nazivom EU-Project-Template.
 
 ## **4.3 Otvaranje kloniranog foldera kao Obsidian "Vault"**
 
@@ -52,7 +54,7 @@ Sada imamo datoteke na računalu, ali ih želimo uređivati u našem pametnom ed
 4. Otvorit će se prozor za odabir foldera. Navigiraj na svoju Radnu površinu (Desktop), klikni na folder EU-Project-Template i pritisni **Select Folder** (ili Odaberi mapu).  
 5. Ako te Obsidian pita "Do you trust the authors of the files in this folder?" (Vjeruješ li autorima...), klikni **"Trust author and enable plugins"**. Ovo je važno jer omogućava rad našem Obsidian Git pluginu.
 
-**Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta.
+✅ **Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta.
 
 ## **4.4 Razumijevanje strukture repozitorija**
 
@@ -71,7 +73,7 @@ Kada pogledaš lijevi izbornik u Obsidianu, vidjet ćeš razne foldere i datotek
 
 **Savjet:** Markdown datoteke obično imaju nastavak .md, a u našem sustavu mogu imati i nastavak .qmd (Quarto Markdown). Za tebe kao pisca nema nikakve razlike – obje vrste otvaraš i uređuješ u Obsidianu na potpuno identičan način.
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept / Korak | Status |
 | :---- | :---- |
@@ -81,6 +83,9 @@ Kada pogledaš lijevi izbornik u Obsidianu, vidjet ćeš razne foldere i datotek
 | Novi folder EU-Project-Template nalazi se na mom računalu | [ ] |
 | Projekt je uspješno otvoren u Obsidianu (Open folder as vault) | [ ] |
 | Znam u kojim folderima pišem, a koje sistemske foldere ne diram | [ ] |
+
+
+
 
 
 

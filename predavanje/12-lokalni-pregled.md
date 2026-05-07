@@ -2,8 +2,10 @@
 title: "Poglavlje 12 - Quarto render: lokalni pregled dokumenta"
 ---
 
-> **Procijenjeno vrijeme:** 15–20 minuta
-> **Preduvjet:** Quarto instaliran i provjeren (Poglavlje 2.3), repozitorij kloniran (Poglavlje 4)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme:** 15–20 minuta
+> 📋 **Preduvjet:** Quarto instaliran i provjeren (Poglavlje 2.3), repozitorij kloniran (Poglavlje 4)
 
 ***
 
@@ -19,7 +21,7 @@ GitHub Actions automatski renderira dokument svaki put kada se pusha na `main` �
 
 3. **Brže iteracije** — lokalni render je trenutan. GitHub Actions treba 2–5 minuta. Ako testiraš izgled tablice ili slike, puno je brže renderirati lokalno.
 
-> **Pravilo palca:** Lokalni render je za **osobnu provjeru**. GitHub Actions je za **službeni output** koji ide timu.
+> 💡 **Pravilo palca:** Lokalni render je za **osobnu provjeru**. GitHub Actions je za **službeni output** koji ide timu.
 
 ***
 
@@ -38,7 +40,7 @@ Otvara se Command Prompt s ispravnom lokacijom:
 C:\Projekti\EU-Project-Template>
 ```
 
-> **Alternativa:** U Obsidianu možeš otvoriti terminal direktno — `Ctrl+P` -> upiši `terminal` -> "Open terminal here". Ako plugin nije instaliran, koristi File Explorer metodu iznad.
+> 💡 **Alternativa:** U Obsidianu možeš otvoriti terminal direktno — `Ctrl+P` -> upiši `terminal` -> "Open terminal here". Ako plugin nije instaliran, koristi File Explorer metodu iznad.
 
 ### macOS
 
@@ -72,7 +74,7 @@ quarto render docs/01-uvod.md --to html
 quarto render docs/01-uvod.md --to pdf
 ```
 
-> **PDF napomena:** Render u PDF zahtijeva instaliran LaTeX (`tinytex`). Ako ti PDF nije potreban, koristi docx ili html. Instalacija tinytex-a: `quarto install tinytex`
+> ⚠️ **PDF napomena:** Render u PDF zahtijeva instaliran LaTeX (`tinytex`). Ako ti PDF nije potreban, koristi docx ili html. Instalacija tinytex-a: `quarto install tinytex`
 
 ### Render cijelog projekta
 
@@ -82,7 +84,7 @@ Renderira sve datoteke definirane u `_quarto.yml` odjednom:
 quarto render
 ```
 
-> **Savjet:** Za svakodnevnu provjeru vlastitog poglavlja koristi render jedne datoteke — brže je. Render cijelog projekta koristi samo kada trebaš vidjeti kako sve zajedno izgleda.
+> 💡 **Savjet:** Za svakodnevnu provjeru vlastitog poglavlja koristi render jedne datoteke — brže je. Render cijelog projekta koristi samo kada trebaš vidjeti kako sve zajedno izgleda.
 
 ### Preview — pregled u pregledniku
 
@@ -103,7 +105,7 @@ Otvori preglednik na adresi `http://localhost:4848/` — vidiš live pregled dok
 
 Za zaustavljanje pregleda pritisni `Ctrl+C` u Command Promptu.
 
-> **Kada koristiti preview vs. render?**
+> 💡 **Kada koristiti preview vs. render?**
 > - **Preview** — dok pišeš i hoćeš vidjeti promjene odmah (HTML prikaz)
 > - **Render** — kada hoćeš finalnu `.docx` datoteku za provjeru izgleda u Wordu
 
@@ -123,7 +125,7 @@ EU-Project-Template/
 
 Otvori `.docx` datoteku dvostrukim klikom — otvara se u Microsoft Wordu s primijenjenim stilovima iz predloška.
 
-> **Važno:** Folder `output/` je naveden u `.gitignore` — generirani dokumenti se **ne commitaju** u repozitorij. Svaki put se generiraju iznova iz izvora. Ovo je namjerno: jedini "izvor istine" su `.md` datoteke, ne generirani outputi.
+> ⚠️ **Važno:** Folder `output/` je naveden u `.gitignore` — generirani dokumenti se **ne commitaju** u repozitorij. Svaki put se generiraju iznova iz izvora. Ovo je namjerno: jedini "izvor istine" su `.md` datoteke, ne generirani outputi.
 
 ***
 
@@ -162,7 +164,7 @@ format:
 | `reference-doc` | Putanja do Word predloška — mora biti ispravna |
 | `format` | Koji formati se generiraju — docx, html, pdf |
 
-> **Česta situacija:** Napisao/la si novu datoteku, renderiraš — i ne vidiš je u finalnom dokumentu. Razlog: datoteka nije dodana u `chapters` listu u `_quarto.yml`. Javi maintaineru da je doda.
+> 💡 **Česta situacija:** Napisao/la si novu datoteku, renderiraš — i ne vidiš je u finalnom dokumentu. Razlog: datoteka nije dodana u `chapters` listu u `_quarto.yml`. Javi maintaineru da je doda.
 
 ***
 
@@ -222,7 +224,7 @@ format:
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -233,12 +235,15 @@ format:
 | **`_quarto.yml`** | Konfiguracijska datoteka — ne mijenjaj bez maintainera |
 | **`output/` folder** | Gdje završavaju lokalno generirani dokumenti — ne commitati |
 
-> **Ključna poruka:** Lokalni render je tvoj osobni alat za provjeru — koristi ga slobodno i često. Ne commitaj generirane dokumente. Službeni output uvijek dolazi iz GitHub Actions, automatski, nakon mergea u main.
+> 💡 **Ključna poruka:** Lokalni render je tvoj osobni alat za provjeru — koristi ga slobodno i često. Ne commitaj generirane dokumente. Službeni output uvijek dolazi iz GitHub Actions, automatski, nakon mergea u main.
 
 ***
 
 **<- Prethodno poglavlje:** [Poglavlje 11 – GitHub Actions](11-github-actions.md)
 **Sljedeće:** [Dodaci – Cheat sheet, Rječnik pojmova, Top 10 grešaka ->](13-dodaci.md)
+
+
+
 
 
 

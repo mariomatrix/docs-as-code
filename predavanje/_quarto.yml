@@ -34,3 +34,6 @@ format:
         \setlength{\LTright}{0pt}
         \renewcommand{\arraystretch}{1.3}
         \setlength{\tabcolsep}{8pt}
+  docx:
+    toc: true
+    number-sections: false

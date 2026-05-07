@@ -2,8 +2,10 @@
 title: "Poglavlje 5 - Podjela rada i timska suradnja"
 ---
 
-> **Procijenjeno vrijeme čitanja:** 10–15 minuta
-> **Preduvjet:** Repozitorij kloniran i vault otvoren (Poglavlje 4)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme čitanja:** 10–15 minuta
+> 📋 **Preduvjet:** Repozitorij kloniran i vault otvoren (Poglavlje 4)
 
 ***
 
@@ -97,10 +99,10 @@ Prije početka pisanja, projektni menadžer kreira ovakvu tablicu zaduženja (ob
 
 | Član tima | Datoteka | Poglavlje | Status |
 |-----------|----------|-----------|--------|
-| Ana Kovač | `01-uvod.qmd` | 1. Uvod i kontekst | (U izradi) |
-| Pero Novak | `02-metodologija.qmd`| 2. Metodologija provedbe | (Nije poceto) |
-| Marija Horvat | `03-rezultati.qmd` | 3. Rezultati i pokazatelji | Gotovo |
-| *Tim* | `index.md` | Naslovnica i meta-podaci | Zaključano |
+| Ana Kovač | `01-uvod.qmd` | 1. Uvod i kontekst | 🟡 U izradi |
+| Pero Novak | `02-metodologija.qmd`| 2. Metodologija provedbe | ⚪ Nije početo |
+| Marija Horvat | `03-rezultati.qmd` | 3. Rezultati i pokazatelji | ✅ Gotovo |
+| *Tim* | `index.md` | Naslovnica i meta-podaci | 🔒 Zaključano |
 
 : Tablica podjele rada {tbl-colwidths="[20,25,35,20]"}
 
@@ -154,7 +156,7 @@ Sve dok pišeš isključivo unutar svog `01-uvod` dokumenta, tehnički si apsolu
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -168,6 +170,9 @@ Sve dok pišeš isključivo unutar svog `01-uvod` dokumenta, tehnički si apsolu
 
 **<- Prethodno poglavlje:** [Poglavlje 4 – Kloniranje repozitorija](04-kloniranje-repozitorija.md)
 **Sljedeće poglavlje:** [Poglavlje 6 – Branching: Tvoj izolirani prostor za rad ->](06-branching.md)
+
+
+
 
 
 

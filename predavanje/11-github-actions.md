@@ -2,8 +2,10 @@
 title: "Poglavlje 11 - GitHub Actions: pregled automatizacije"
 ---
 
-> **Procijenjeno vrijeme čitanja:** 10 minuta
-> **Preduvjet:** Razumijevanje toka rada (Poglavlja 1–10)
+{{< pagebreak >}}
+
+> ⏱️ **Procijenjeno vrijeme čitanja:** 10 minuta
+> 📋 **Preduvjet:** Razumijevanje toka rada (Poglavlja 1–10)
 
 ***
 
@@ -101,9 +103,9 @@ Nakon svakog pusha na `main`, pored commit poruke na GitHubu pojavljuje se ikona
 
 | Ikona | Značenje |
 |-------|----------|
-| Zuta tocka | Action je pokrenut, u tijeku |
-| | Action završio uspješno, dokumenti su generirani |
-| Ne | Action nije uspio — nešto je krenulo naopako |
+| 🟡 Žuta točka | Action je pokrenut, u tijeku |
+| ✅ Zelena kvačica | Action završio uspješno, dokumenti su generirani |
+| ❌ Crveni X | Action nije uspio — nešto je krenulo naopako |
 
 ### Kako otvoriti Actions log
 
@@ -179,7 +181,7 @@ Ove informacije su dovoljne da lociraš i popraviš problem.
 | `ParseError: unexpected character` | Poseban znak u Markdownu koji Quarto ne može parsirati | Pronađi redak naveden u grešci, provjeri znakove |
 | `Error: Process completed with exit code 1` | Generička greška — gledaj prethodne linije loga | Skrolaj gore u logu — greška je opisana nekoliko redaka iznad |
 
-> **Savjet:** Kopiraj poruku greške i pošalji je maintaineru — s imenom datoteke i brojem retka. To je sve što je potrebno za dijagnozu.
+> 💡 **Savjet:** Kopiraj poruku greške i pošalji je maintaineru — s imenom datoteke i brojem retka. To je sve što je potrebno za dijagnozu.
 
 ***
 
@@ -226,7 +228,7 @@ Kada je Action uspješno završio, generirani dokumenti su dostupni kao **Artifa
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -237,12 +239,15 @@ Kada je Action uspješno završio, generirani dokumenti su dostupni kao **Artifa
 | **Log** | Ispis svih koraka — tražimo crvene linije za dijagnozu |
 | **Zelena/crvena ikona** | Brzi vizualni signal o uspjehu ili neuspjehu rendera |
 
-> **Ključna poruka:** GitHub Actions radi u pozadini, automatski, bez tvoje intervencije. Tvoj jedini zadatak je prepoznati kada nešto nije prošlo (crveni X), pročitati poruku greške i javiti maintaineru — ili popraviti svoju `.md` datoteku ako greška pokazuje na nju.
+> 💡 **Ključna poruka:** GitHub Actions radi u pozadini, automatski, bez tvoje intervencije. Tvoj jedini zadatak je prepoznati kada nešto nije prošlo (crveni X), pročitati poruku greške i javiti maintaineru — ili popraviti svoju `.md` datoteku ako greška pokazuje na nju.
 
 ***
 
 **<- Prethodno poglavlje:** [Poglavlje 10 – Word DOCX template](10-word-template.md)
 **Sljedeće poglavlje:** [Poglavlje 12 – Quarto render: lokalni pregled dokumenta ->](12-lokalni-pregled.md)
+
+
+
 
 
 

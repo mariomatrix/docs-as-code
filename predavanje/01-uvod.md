@@ -1,6 +1,8 @@
----
+﻿---
 title: "Poglavlje 1 - Uvod: Nova paradigma rada s dokumentacijom"
 ---
+
+{{< pagebreak >}}
 
 ### Preduvjeti za cijeli priručnik
 
@@ -20,8 +22,8 @@ Prije nego počneš, provjeri imaš li:
 | Quarto | 1.4+ | Pretvorba teksta u Word/PDF/HTML |
 | GitHub račun | — | Pohrana i dijeljenje dokumentacije |
 
-> **Procijenjeno vrijeme postavljanja:** 2–3 sata (jednokratno)
-> **Procijenjeno vrijeme učenja toka rada:** 1 dan aktivne prakse
+> ⏱️ **Procijenjeno vrijeme postavljanja:** 2–3 sata (jednokratno)
+> ⏱️ **Procijenjeno vrijeme učenja toka rada:** 1 dan aktivne prakse
 
 ***
 
@@ -216,7 +218,7 @@ Do kraja priručnika, moći ćeš **samostalno:**
 
 ***
 
-## Što smo naučili u ovom poglavlju
+## ✅ Što smo naučili u ovom poglavlju
 
 | Koncept | Objašnjenje |
 |---------|-------------|
@@ -229,11 +231,14 @@ Do kraja priručnika, moći ćeš **samostalno:**
 
 ***
 
-> **Savjet:** Ne moraš odmah razumjeti svaki pojam. Svaki korak bit će objašnjen konkretnim primjerima u sljedećim poglavljima. Sada je dovoljno da imaš opću sliku kako dijelovi funkcioniraju zajedno.
+> 💡 **Savjet:** Ne moraš odmah razumjeti svaki pojam. Svaki korak bit će objašnjen konkretnim primjerima u sljedećim poglavljima. Sada je dovoljno da imaš opću sliku kako dijelovi funkcioniraju zajedno.
 
 ***
 
 **Sljedeće poglavlje:** [Poglavlje 2 – Instalacija i postavljanje okruženja ->](02-instalacija.md)
+
+
+
 
 
 

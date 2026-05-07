@@ -2,6 +2,8 @@
 title: "Poglavlje 13 - Dodaci: Cheat Sheet, Rjecnik i Rjesavanje gresaka"
 ---
 
+{{< pagebreak >}}
+
 Ovo poglavlje služi kao tvoja "prva pomoć". Ne moraš ga čitati od početka do kraja. Spremi ga (ili isprintaj) kako bi mu se mogao/la brzo vratiti kada zaboraviš neku naredbu, kada čuješ nepoznat izraz ili kada sustav javi grešku.
 
 ## **13.1 Brzi referentni karton (Cheat Sheet)**
@@ -125,6 +127,9 @@ Ne moraš biti stručnjak da bi ih pitao/la za pomoć. Dovoljno je objasniti št
 
 
 **Kraj priručnika\!** Želimo ti ugodan i produktivan rad u novom okruženju\!
+
+
+
 
 
 
