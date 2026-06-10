@@ -45,6 +45,8 @@ Ciljevi su:
 
 ***
 
+> ⚠️ **Važno:** Svaki element liste mora biti u **novom redu**. Ako ih napišeš u istom redu (npr. `- stavka 1 - stavka 2`), Obsidian i Quarto će ih prikazati spojene u istom redu. Također je dobra navika ostaviti prazan redak između normalnog odlomka teksta i liste koja slijedi iza njega.
+
 A Quarto od toga generira lijepo formatirani Word dokument s automatski primijenjenim stilovima.
 
 ***
@@ -59,7 +61,7 @@ A Quarto od toga generira lijepo formatirani Word dokument s automatski primijen
 ### Naslov razine 3  (Heading 3 u Wordu)
 ```
 
-> ⚠️ **Važno:** Između `#` i teksta naslova mora biti **razmak**. `#Naslov` ne funkcionira, `# Naslov` funkcionira.
+> ⚠️ **Važno:** Između `#` i teksta naslova mora biti **razmak**. U Obsidianu `#Naslov` (bez razmaka) predstavlja **oznaku (tag)**, a ne naslov, i neće se renderirati kao naslov u dokumentu!
 
 ***
 
@@ -104,6 +106,8 @@ Prikazuje se kao: **podebljani tekst**, *kurziv*, ***podebljani kurziv***
 |--------------|--------------|--------------|
 | Sadržaj ćelije | Sadržaj ćelije | Sadržaj ćelije |
 | Drugi redak  | Drugi redak  | Drugi redak  |
+
+> 💡 **Savjet za tablice:** Dodatne crtice (`-`) u drugom retku služe samo kao vizualna pomoć za lakše čitanje u kodu. Za prepoznavanje tablice dovoljno je staviti samo jednu crticu po stupcu (npr. `|-|-|-|`), što ima potpuno isti učinak.
 ```
 
 Prikazuje se kao:
@@ -113,7 +117,8 @@ Prikazuje se kao:
 | Sadržaj ćelije | Sadržaj ćelije | Sadržaj ćelije |
 | Drugi redak | Drugi redak | Drugi redak |
 
-> 💡 **Savjet:** Ne moraš ručno poravnavati crtice i stupce — Obsidian to radi automatski kada pritisneš Tab unutar tablice. Možeš i koristiti plugin **"Advanced Tables"** koji olakšava rad s tablicama.
+> 💡 **Savjet:** Ne moraš ručno poravnavati crtice i stupce. U vizualnom načinu rada (Live Preview), Obsidian sam poravnava tablicu i prebacuje te u sljedeću ćeliju kada pritisneš **Tab**. (Upozorenje: u načinu rada *Source mode* pritisak na tipku Tab uvući će cijeli redak i pretvoriti ga u blok koda, stoga tamo nemoj koristiti Tab za navigaciju).
+> Također možeš koristiti i plugin **"Advanced Tables"** (iz *Community plugins* sekcije) koji uvelike olakšava i automatizira rad s tablicama.
 
 ***
 

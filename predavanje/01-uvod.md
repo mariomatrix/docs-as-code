@@ -46,7 +46,7 @@ Problemi starog načina rada:
 - Verzije se gube, miješaju ili dupliraju
 - Paralelni rad na istom dokumentu stvara konflikte
 - Nema automatske provjere konzistentnosti formatiranja
-- Svaki put kada se mijenja sadržaj, netko mora ručno renovirati cijeli dokument
+- Svaki put kada se mijenja sadržaj, netko mora ručno pregledati i uskladiti cijeli dokument
 
 ***
 
@@ -62,7 +62,7 @@ Umjesto Word datoteka i e-maila, koristimo:
 - **Obsidian** – ugodan editor za pisanje u Markdownu
 - **Quarto** – alat koji pretvara Markdown u lijepo formatiran Word/PDF/HTML
 
-Ključna razlika: **sadržaj je odvojen od oblika.**
+Ključna razlika: **sadržaj je odvojen od oblikovanja.**
 
 Ti pišeš samo tekst. Oblikovanje (fontovi, stilovi, numeracija) se primjenjuje automatski i konzistentno pri svakom generiranju dokumenta.
 
@@ -205,9 +205,9 @@ Ovo je ono što Quarto generira (Word dokument):
 Projekt se provodi u tri      <- tijelo teksta, Times 11pt
 faze s ciljem smanjenja...
 
-  • Faza 1: Analiza           <- lista s točkicama
-  • Faza 2: Provedba          
-  • Faza 3: Praćenje
+  • Faza 1: Analiza i planiranje       <- lista s točkicama
+  • Faza 2: Provedba mjera          
+  • Faza 3: Praćenje i izvještavanje
 ```
 
 Ti ne dodaješ fontove, veličine, boje — sve to definira Word predložak jednom, a Quarto ga primjenjuje automatski na svaki dokument.
@@ -239,7 +239,7 @@ Ti ne dodaješ fontove, veličine, boje — sve to definira Word predložak jedn
 
 Do kraja priručnika, moći ćeš **samostalno:**
 
-- Postaviti kompletan radni alat na svom računalu
+- Postaviti sve potrebne radne alate na svom računalu
 - Klonirati projektni repozitorij i otvoriti ga u Obsidianu
 - Pisati dokumentaciju u Markdown formatu
 - Raditi na vlastitoj grani bez ometanja kolega

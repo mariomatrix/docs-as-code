@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Poglavlje 9 - Word DOCX template: koncept"
 ---
 
@@ -47,12 +47,11 @@ Quarto čita oznake iz Markdowna (`#`, `##`, `**`, tablice...) i za svaku oznaku
 
 ## 10.3 Gdje se template nalazi
 
-U repozitoriju, template se nalazi na lokaciji:
+U repozitoriju, template se nalazi u samom korijenu projekta na lokaciji:
 
 ```text
 EU-Project-Template/
-└── templates/
-    └── EU-dokument-template.docx    <- Word predložak
+└── template.docx    <- Word predložak
 ```
 
 Quarto zna gdje je template jer je putanja definirana u `_quarto.yml` konfiguracijskoj datoteci:
@@ -95,7 +94,7 @@ Ako ipak trebaš promijeniti izgled:
 
 ### Korak 1: Otvori template u Wordu
 
-Dvostruki klik na `templates/EU-dokument-template.docx` — otvara se u Microsoft Wordu.
+Dvostruki klik na datoteku `template.docx` u korijenskom folderu projekta — otvara se u Microsoft Wordu.
 
 ### Korak 2: Uredi stilove, ne sadržaj
 
@@ -127,7 +126,7 @@ Ako Quarto ne pronađe template na definiranoj putanji, render će i dalje radit
 
 GitHub Actions će u logu prikazati upozorenje:
 ```text
-Warning: reference-doc 'templates/EU-dokument-template.docx' not found.
+Warning: reference-doc 'template.docx' not found.
 Using default styles.
 ```
 

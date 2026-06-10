@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Poglavlje 4 - Kloniranje repozitorija i kreiranje Obsidian vaulta"
 ---
 
@@ -38,7 +38,7 @@ Sada ćemo klonirati testni repozitorij na tvoju Radnu površinu (Desktop).
 4. **Što se događa sada?**  
    Vidjet ćeš tekst koji ispisuje postotke (Receiving objects: 100%...). Git preuzima sve datoteke i cijelu povijest projekta s GitHuba na tvoje računalo.
 
-ℹ️ **Napomena o prijavi:** Ako repozitorij nije javno dostupan, u ovom trenutku iskočit će prozor ili će terminal tražiti tvoje GitHub korisničko ime i lozinku. Kao lozinku **obavezno upiši onaj PAT token** koji si kreirao/la i spremio/la u Poglavlju 2\! (Ako si u Poglavlju 2 uspješno podesio/la Credential Manager, ovaj korak će se možda odraditi potpuno automatski).
+ℹ️ **Napomena o prijavi:** Ako repozitorij nije javno dostupan, u ovom trenutku iskočit će prozor ili će terminal tražiti tvoje GitHub korisničko ime i lozinku (PAT token). Kao lozinku **obavezno upiši (ili zalijepi) onaj PAT token** koji si kreirao/la i spremio/la u Poglavlju 2.5! Nakon što ga jednom uneseš, tvoje računalo (Windows Credential Manager) će ga zapamtiti, pa se ovaj korak ubuduće odvija potpuno automatski.
 
 ✅ **Provjera uspjeha:** Smanji sve prozore i pogledaj svoju Radnu površinu. Tamo bi se sada trebao nalaziti novi folder pod nazivom EU-Project-Template.
 
@@ -51,10 +51,10 @@ Sada imamo datoteke na računalu, ali ih želimo uređivati u našem pametnom ed
 1. Otvori program **Obsidian**.  
 2. Ako ti se otvori onaj probni Vault iz Poglavlja 3, klikni na ikonu "Vault" u donjem lijevom kutu (izgleda kao sef s otvorenim vratima) kako bi otvorio/la glavni izbornik.  
 3. U glavnom izborniku Obsidiana, pored opcije **"Open folder as vault"** (Otvori mapu kao trezor), klikni na gumb **Open**.  
-4. Otvorit će se prozor za odabir foldera. Navigiraj na svoju Radnu površinu (Desktop), klikni na folder EU-Project-Template i pritisni **Select Folder** (ili Odaberi mapu).  
-5. Ako te Obsidian pita "Do you trust the authors of the files in this folder?" (Vjeruješ li autorima...), klikni **"Trust author and enable plugins"**. Ovo je važno jer omogućava rad našem Obsidian Git pluginu.
+4. Otvorit će se prozor za odabir foldera. Pronađi Radnu površinu (Desktop), klikni na folder EU-Project-Template i pritisni **Select Folder** (ili Odaberi mapu).  
+5. Ako te Obsidian pita "Do you trust the authors of the files in this folder?" (Vjeruješ li autorima...), odaberi **"Trust author and enable plugins"**. Ovo je važno jer omogućava rad našem Obsidian Git pluginu.
 
-✅ **Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta.
+✅ **Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta. (Napomena: Nakon odabira “Trust author and enable plugins”, u nekim se slučajevima mogu automatski otvoriti postavke aplikacije ili Community plugins sekcija).
 
 ## **4.4 Razumijevanje strukture repozitorija**
 

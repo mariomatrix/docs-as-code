@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Poglavlje 3 - Postavljanje radnog okruženja"
 ---
 
@@ -45,7 +45,7 @@ git clone https://github.com/FGAG-docs/EU-Project-Template
 
 4. Vidjet ćeš tekst koji ispisuje postotke (`Receiving objects: 100%...`). Git preuzima sve datoteke i cijelu povijest projekta s GitHuba na tvoje računalo.
 
-> ℹ️ **Napomena o prijavi:** Ako repozitorij nije javno dostupan, terminal će tražiti tvoje GitHub korisničko ime i PAT token. Upiši ih kada se to zatraži. Ako si u Poglavlju 2 postavio/la Windows Credential Manager, ovaj korak će se odraditi automatski.
+> ℹ️ **Napomena o prijavi:** Ako repozitorij nije javno dostupan, Git/Windows će pri prvom preuzimanju ili slanju (Push/Pull) prikazati prozor za prijavu. Odaberi prijavu putem Tokena i zalijepi svoj PAT token. Tvoj sustav (npr. Git Credential Manager na Windowsima) će ga zapamtiti i više te neće tražiti.
 
 > ⚠️ **Ako kloniranje ne radi — provjeri ove 3 stvari:**
 > 1. Jesi li primio/la pozivnicu za repozitorij i prihvatio/la je? (Poglavlje 2.4)
@@ -60,66 +60,54 @@ git clone https://github.com/FGAG-docs/EU-Project-Template
 
 Sada imamo datoteke na računalu. Otvorimo ih u Obsidianu.
 
-> 💡 **Savjet:** U Obsidianu se svaki projektni folder naziva **Vault** (trezor). Svaki projekt koji otvoriš u Obsidianu je zasebni vault s vlastitim postavkama i pluginima.
+> 💡 **Savjet:** U Obsidianu se svaki projektni folder naziva **Vault** (trezor). Svaki projekt koji otvoriš u Obsidianu je zasebni vault s vlastitim postavkama i pluginovima.
 
 ### Korak po korak
 
 1. Pokreni **Obsidian**
 2. Na početnom ekranu klikni na **"Open folder as vault"** (Otvori mapu kao trezor)
-3. Otvorit će se prozor za odabir foldera. Navigiraj na Radnu površinu (Desktop), klikni na folder `EU-Project-Template` i pritisni **Select Folder**
-4. Ako Obsidian pita `"Do you trust the authors of the files in this folder?"`, klikni **"Trust author and enable plugins"**
+3. Otvorit će se prozor za odabir foldera. Pronađi Radnu površinu (Desktop), klikni na folder `EU-Project-Template` i pritisni **Select Folder**
+4. Ako Obsidian pita `"Do you trust the authors of the files in this folder?"`, odaberi **"Trust author and enable plugins"**
 
 > ⚠️ **Važno:** Klik na "Trust author and enable plugins" je obavezan — bez toga Obsidian Git plugin neće raditi. Ova poruka se pojavljuje samo jednom, pri prvom otvaranju vaulta.
 
-✅ **Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta.
+✅ **Provjera uspjeha:** S lijeve strane Obsidian ekrana sada vidiš popis datoteka i foldera tvog projekta. (Napomena: Nakon odabira “Trust author and enable plugins”, u nekim se slučajevima mogu automatski otvoriti postavke aplikacije ili Community plugins sekcija).
 
 ***
 
-## 3.4 Instalacija Obsidian Git plugin
+## 3.4 Aktivacija predinstaliranog Git plugina
 
-Obsidian dolazi s ugrađenim pluginima, ali **Obsidian Git** je *community plugin* — plugin razvijen od strane zajednice, nije dio službenog Obsidiana. Instaliramo ga direktno u ovaj vault, na pravi projekt.
+U našem projektu `EU-Project-Template`, najvažniji plugini su **već unaprijed instalirani**. Kada si u prethodnom koraku kliknuo/la na **"Trust author and enable plugins"**, Obsidian je automatski omogućio rad tih plugina. Zato ne moraš samostalno pretraživati niti instalirati plugin — on je već spreman!
 
-### Korak 1: Omogući community plugine
+### Korak 1: Kako provjeriti je li uključen
 
-1. Klikni na ikonu **zupčanika** ⚙️ u donjem lijevom kutu (Settings / Postavke)
-2. U lijevom izborniku klikni na **"Community plugins"**
-3. Vidjet ćeš upozorenje: *"Community plugins can execute arbitrary code..."*
+1. Klikni na ikonu **zupčanika** ⚙️ u donjem lijevom kutu (Settings / Postavke / Options).
+2. U lijevom izborniku, na samom dnu pod sekcijom **"Community plugins"**, potraži stavku **"Git"**.
+3. Ako je nema ili je isključena, klikni na **"Community plugins"** u lijevom izborniku i provjeri je li sklopka pored plugina **"Git"** (autor: Vinzent) uključena (zelena).
 
-> ℹ️ **O sigurnosnom upozorenju:** Ovo upozorenje postoji jer community plugine pišu vanjski developeri. **Obsidian Git** je jedan od najpopularnijih i najprovjerenijih plugina s desetcima tisuća korisnika i otvorenim izvornim kodom. Prihvati upozorenje.
+> ℹ️ **Napomena:** Budući da je projektni predložak postavljen tako da vjeruješ autorima, Obsidian je već omogućio community plugine i instalirao plugin **Git**. Neće se prikazati nikakva sigurnosna upozorenja jer si odobrenje dao/la pri otvaranju foldera.
 
-4. Klikni na **"Turn on community plugins"**
-5. Potvrdi klikom na **"Turn on"**
-
-### Korak 2: Pronađi i instaliraj plugin
-
-1. U istom ekranu (Community plugins), klikni na gumb **"Browse"** (Pregledaj)
-2. U polje za pretraživanje upiši: `Obsidian Git`
-3. U rezultatima klikni na **"Obsidian Git"** (autor: Vinzent03)
-4. Klikni na gumb **"Install"**
-5. Nakon instalacije klikni na **"Enable"** (Omogući)
-
-✅ **Provjera uspjeha:** U lijevom izborniku Settings-a trebala bi se pojaviti nova stavka **"Obsidian Git"** pod sekcijom *Plugin Options*.
+✅ **Provjera uspjeha:** U lijevom izborniku Options-a, na dnu u sekciji **"Community plugins"** trebala bi se pojaviti nova stavka **"Git"**.
 
 ***
 
 ## 3.5 Konfiguracija plugina – autentikacija
 
-Ovo je najvažniji korak — ovdje unosimo naš PAT token da Obsidian može komunicirati s GitHubom.
+Ovo je najvažniji korak — ovdje unosimo podatke o autoru da Git zna tko radi izmjene.
 
-1. U Settings izborniku klikni na **"Obsidian Git"**
-2. Skrolaj do sekcije **"Authentication/Commit Author"**
-3. Ispuni sljedeća polja:
+1. U Options izborniku klikni na **"Git"**
+2. Skrolaj do sekcije **"Commit Author"**
+3. Ispuni sljedeća polja u sekciji **"Commit Author"**:
 
 | Polje | Što upisati | Primjer |
 |-------|------------|---------|
-| **Username** | Tvoje GitHub korisničko ime | `ana-kovac` |
-| **Password/Token** | PAT token koji si kreirao/la u Poglavlju 2.5 | `ghp_ABC...` |
 | **Author name** | Tvoje ime i prezime | `Ana Kovač` |
 | **Author email** | E-mail vezan uz GitHub račun | `ana@primjer.com` |
 
-> 💡 **Savjet:** Polje za token izgleda kao obično tekstualno polje — token upisuješ ili lijepiš (Ctrl+V) direktno u njega. Obsidian ga sam sigurno pohranjuje.
-
 > ⚠️ **Upozorenje:** Author name i Author email moraju biti **isti** kao oni koje si postavio/la u Git konfiguraciji (Poglavlje 2.1, Korak 4). Inače će tvoje promjene biti pripisane drugom identitetu.
+
+> 🔑 **Gdje upisati PAT token i korisničko ime?**
+> U modernoj verziji plugina u postavkama **nema polja za Username i Password/Token**. To je zbog sigurnosti. Umjesto toga, kada prvi put napraviš Commit i pokušaš poslati rad (Push), otvorit će se prozor za prijavu na GitHub. Tamo odaberi opciju **"Token"** i zalijepi svoj PAT token. Nakon toga će tvoj sustav zapamtiti prijavu i više te neće tražiti!
 
 ***
 
@@ -131,21 +119,22 @@ Ostale postavke koje preporučujemo za svakodnevni rad:
 
 Skrolaj do sekcije **"Automatic"**:
 
-| Postavka | Preporučena vrijednost | Objašnjenje |
-|----------|----------------------|-------------|
-| **Pull updates on startup** | Uključeno | Svaki put kad otvoriš Obsidian, automatski preuzme najnovije promjene kolega |
-| **Pull interval (minutes)** | `0` (isključeno) | Automatski pull svakih N minuta — za početnike isključi, radi ručno |
-| **Push on commit** | Uključeno | Nakon svakog commita, automatski šalje promjene na GitHub |
+Postavi sljedeće opcije automatizacije:
+
+- U sekciji **"Pull"** postavi **Pull on startup** na uključeno.
+- U sekciji **"Automatic"** postavi **Auto pull interval (minutes)** na `0` (isključeno).
+
+> ℹ️ **Napomena za Push:** Ako ne vidiš postavku "Push on commit" ili "Auto push", to znači da ćeš promjene slati ručno klikom na gumb za Push ili kroz Command Palette. To je i sigurnije jer imaš kontrolu nad time kada šalješ svoj rad.
 
 > 💡 **Zašto isključiti automatski pull interval?** Automatski pull može prekinuti pisanje u neočekivanom trenutku. Bolja navika za početnike: ručno povuci promjene ujutro kada sjedneš raditi.
 
 ### Commit poruke
 
-Skrolaj do sekcije **"Commit"**:
+Skrolaj do sekcije **"Commit message"**:
 
 | Postavka | Preporučena vrijednost |
 |----------|----------------------|
-| **Commit message** | `{{date}} - {{hostname}}: {{numFiles}} datoteka izmijenjeno` |
+| **Commit message on manual commit** | `{{date}} - {{hostname}}: {{numFiles}} datoteka izmijenjeno` |
 | **Date format** | `YYYY-MM-DD HH:mm` |
 
 > 💡 **Objašnjenje commit poruke:** `{{date}}` automatski upiše datum i vrijeme, `{{hostname}}` ime tvog računala, `{{numFiles}}` broj izmijenjenih datoteka. Rezultat izgleda ovako: `2024-03-15 09:30 - ANA-LAPTOP: 2 datoteke izmijenjeno`.
@@ -158,7 +147,7 @@ Nakon konfiguracije, plugin dodaje nekoliko elemenata u Obsidian sučelje:
 
 ### Source Control panel (bočna traka)
 
-Klikni na ikonu **grananja** (<) u desnoj bočnoj traci (ili pritisni `Ctrl+Shift+G`).
+Klikni na Git ikonu (izgleda kao grananje ili Git simbol) u bočnoj traci (kod tebe je na lijevoj traci). Pritisak na prečac `Ctrl+Shift+G` radi samo ako je ta kratica ručno podešena u Obsidian postavkama.
 
 Otvara se **Source Control** panel s:
 
@@ -179,23 +168,19 @@ Otvara se **Source Control** panel s:
 
 | Gumb | Što radi |
 |------|----------|
-| **v Pull** | Preuzima najnovije promjene s GitHuba |
-| **Stage All** | Označava sve promjene kao "spremne za commit" |
-| **Commit** | Sprema promjene s opisnom porukom |
-| **^ Push** | Šalje commitove na GitHub |
+| **↓ Pull** | Preuzima najnovije promjene s GitHuba |
+| **⊕ Stage All** | Označava sve promjene kao "spremne za commit" |
+| **✓ Commit** | Sprema promjene s opisnom porukom |
+| **↑ Push** | Šalje commitove na GitHub |
 
 ### Status bar (statusna traka)
 
-Na dnu Obsidian prozora vidjet ćeš informacije o trenutnom stanju:
+Na dnu Obsidian prozora (dolje desno) vidjet ćeš informacije o trenutnom stanju:
 
-```text
-Current branch: main  |  v0  ^2
-```
-
-Što znači:
-- **Current branch:** na kojoj si grani (više o granama u Poglavlju 3)
-- **v0** — nema novih promjena za preuzeti s GitHuba
-- **^2** — imaš 2 commita koja još nisu poslana na GitHub
+- Statusne podatke poput broja backlinks, riječi i znakova (npr. `0 backlinks | </> | 7 words | 51 characters`).
+- Ikonu za sinkronizaciju (npr. prekriženu ikonu Obsidian Sync ako je isključen).
+- Kvačicu `✓` (koja na prijelaz miša / hover prikazuje kada je napravljen zadnji commit, npr. "Last commit: 7 days ago").
+- Naziv trenutne grane (npr. `main` ili `sime/uvod`). Klikom na naziv grane otvara se izbornik za brzo prebacivanje na druge grane!
 
 ***
 
@@ -220,18 +205,18 @@ Current branch: main  |  v0  ^2
 
 ## 3.9 Razumijevanje strukture repozitorija
 
-Kada pogledaš lijevi izbornik u Obsidianu, vidjet ćeš razne foldere i datoteke. Evo što svaki znači i što smiješ dirati:
+Kada pogledaš lijevi izbornik u Obsidianu, vidjet ćeš popis datoteka i mapa tvog projekta. Primijeti da su neke mape i datoteke skrivene u Obsidianu i vidljive su samo u Windows Exploreru jer ih Obsidian ne podržava ili započinju s točkom.
 
-| Ime foldera/datoteke | Namjena | Što ti radiš s tim? |
-| :---- | :---- | :---- |
-| `.obsidian` | Ovdje Obsidian čuva svoje postavke i plugine. | **Ne diraj** bez razloga. |
-| `.github` | Upute za "robote" (GitHub Actions) koji automatski generiraju Word/PDF dokument. | **Ne diraj.** Ovo je posao administratora. |
-| `Slike` (ili `images`) | Folder za sve vizualne materijale. | **Koristiš.** Tu spremaš slike za dokument. |
-| `*.md` ili `*.qmd` datoteke | Tvoji tekstualni dokumenti (npr. `01-Uvod.md`). | **Ovdje pišeš.** |
-| `_quarto.yml` | Konfiguracijska datoteka koja spaja sva poglavlja u jednu Word knjigu. | **Oprezno.** Mijenjaš samo kada dodaješ novo poglavlje. |
-| `reference-doc.docx` | Word predložak koji definira fontove, naslove i boje. | **Ne diraj** osim ako nisi zadužen/a za vizualni identitet. |
+| Ime foldera/datoteke | Vidljivost u Obsidianu | Namjena | Što ti radiš s tim? |
+| :---- | :---- | :---- | :---- |
+| `.obsidian` | ❌ Skriven | Postavke i plugini Obsidiana. | **Ne diraj** bez razloga. |
+| `.github` | ❌ Skriven | Postavke za GitHub Actions (automatski render). | **Ne diraj.** |
+| `Slike` (ili `images`) | ✅ Vidljiv | Mapa za vizualne materijale. (Ako ne postoji u projektu, slobodno je sam/a kreiraj). | **Koristiš.** Tu spremaš slike. |
+| `*.md` ili `*.qmd` | ✅ Vidljiv | Tvoji tekstualni dokumenti. Ekstenzije (`.md`/`.qmd`) su sakrivene u Obsidianu, vidi se samo naziv. | **Ovdje pišeš.** |
+| `_quarto.yml` | ❌ Skriven | Konfiguracija knjige. | **Oprezno.** |
+| `template.docx` | ❌ Skriven | Word predložak za oblikovanje dokumenta. | **Ne diraj.** |
 
-: Struktura repozitorija {tbl-colwidths="[25,35,40]"}
+: Struktura repozitorija {tbl-colwidths="[20,20,30,30]"}
 
 > ℹ️ **Napomena o `.obsidian` folderu:** Sadrži i dijeljene postavke (plugini koje svi koriste) i osobne postavke (raspored prozora, koji se razlikuje po računalu). `.gitignore` je već podešen tako da se dijeljene postavke sinkroniziraju, a osobne ignoriraju.
 

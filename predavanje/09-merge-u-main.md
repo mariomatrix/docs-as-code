@@ -52,7 +52,7 @@ U praksi, to znači:
 
 Ovo je najčešći i najjednostavniji način — sve se radi kroz preglednik.
 
-### Korak 1: Otvori Pull Request
+### Korak 1: Otvori Pull Request (PR)
 
 1. Idi na `https://github.com/FGAG-docs/EU-Project-Template`
 2. Klikni na karticu **"Pull requests"**

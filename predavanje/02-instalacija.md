@@ -20,7 +20,7 @@ Git je program koji radi u pozadini i **prati sve promjene** u tvojim datotekama
 ### Korak 1: Preuzimanje
 
 1. Otvori preglednik i idi na: **https://git-scm.com/download/win**
-2. Preuzimanje će se automatski pokrenuti za tvoj Windows
+2. Preuzmi odgovarajuću verziju
 3. Sačekaj da se preuzme datoteka (npr. `Git-2.44.0-64-bit.exe`)
 
 > **macOS:** Idi na https://git-scm.com/download/mac i slijedi upute za instalaciju putem Homebrew-a, ili jednostavno otvori Terminal i upiši `git --version` — macOS će ponuditi automatsku instalaciju.
@@ -138,7 +138,7 @@ Quarto je alat koji radi u pozadini — pretvara tvoje tekstualne datoteke u fin
 quarto check
 ```
 
-✅ **Provjera uspjeha:** Nakon nekoliko sekundi vidjet ćeš popis provjera. Važno je da nema crvenih grešaka za osnovne komponente. Upozorenja (žuta) su u redu.
+✅ **Provjera uspjeha:** Nakon nekoliko sekundi vidjet ćeš popis provjera. Upozorenja (žuta) su u redu.
 
 > ⚠️ **Ako naredba nije prepoznata:** Restart računala i pokušaj ponovo — instalacija Quarta ponekad zahtijeva ponovno pokretanje računala da bi se PATH ažurirao.
 
@@ -161,7 +161,7 @@ GitHub je online platforma gdje se pohranjuje sva dokumentacija projekta. Svaki 
 > **Savjet za korisničko ime:** Odaberi nešto profesionalno jer će biti vidljivo u svim pull requestima i komentarima. Primjeri: `ana-kovac`, `pero-novak`, `mj-horvat`
 
 6. Dovrši verifikaciju (puzzle ili slično)
-7. GitHub će poslati **verifikacijski e-mail** — otvori ga i klikni na link za potvrdu
+7. GitHub će poslati **verifikacijski e-mail** s kodom za potvrdu
 
 ### Korak 2: Traženje pristupa repozitoriju
 
@@ -171,7 +171,7 @@ Nakon kreiranja računa, pošalji administratoru projekta:
 - Svoje GitHub **korisničko ime**
 - Svoju **e-mail adresu** vezanu uz GitHub
 
-Administrator će ti poslati pozivnicu na e-mail. **Klikni na link u e-mailu** da prihvatiš pozivnicu. Tek tada ćeš imati pristup repozitoriju.
+Administrator će ti poslati pozivnicu putem e-mail-a. **Klikni na link u e-mailu** da prihvatiš pozivnicu. Tek tada ćeš imati pristup repozitoriju.
 
 ***
 
@@ -181,7 +181,7 @@ Administrator će ti poslati pozivnicu na e-mail. **Klikni na link u e-mailu** d
 
 Kada Obsidian šalje tvoje promjene na GitHub, GitHub mora znati da si zaista ti — a ne netko tko se lažno predstavlja. Umjesto lozinke, GitHub koristi **Personal Access Token** (PAT) — poseban ključ koji koristimo samo za ovaj tip pristupa.
 
-> ℹ️ **Za razumijevanje:** PAT je poput privremene propusnice — možeš ga poništiti u bilo kojem trenutku ako sumnjaš da ga je netko drugi dobio.
+> ℹ️ **PAT** je poput privremene propusnice — možeš ga poništiti u bilo kojem trenutku ako sumnjaš da ga je netko drugi dobio.
 
 ### Korak 1: Kreiranje PAT-a na GitHubu
 
@@ -267,6 +267,8 @@ Datoteka `.gitignore` već postoji u repozitoriju. Ovako izgleda relevantni dio 
 .DS_Store          # macOS metapodaci
 Thumbs.db          # Windows metapodaci
 desktop.ini        # Windows postavke foldera
+
+> ℹ️ **Zašto ignoriramo ove datoteke?** Ove datoteke automatski stvara tvoj operacijski sustav (Windows ili macOS) za vlastite potrebe (npr. spremanje sličica ili postavki prikaza mape). One nisu dio tvog projekta i ne trebaju završiti na GitHubu.
 
 # Quarto output (generirani dokumenti)
 /_site/

@@ -75,7 +75,7 @@ Ovako izgleda kompletan životni ciklus jednog dokumenta kroz timsku suradnju:
                          Kreira vlastitu granu
                          Piše dokument
                          Commit + Push
-                         Otvori Pull Request
+                         Otvori Pull Request (PR)
                                 |
                                 v
                                               Pregledava PR
@@ -87,7 +87,7 @@ Ovako izgleda kompletan životni ciklus jednog dokumenta kroz timsku suradnju:
                          Push novih izmjena
                                 |
                                 v
-  Odobrava i mergea <-----------+
+  Odobrava i spaja (merge) <-----------+
   u main
          |
          v
@@ -115,16 +115,18 @@ Prije početka pisanja, projektni menadžer kreira ovakvu tablicu zaduženja (ob
 U tablici iznad vidiš da je datoteka `index.md` "zaključana". Ako ju otvoriš, na samom vrhu vidjet ćeš blok koda oivičen s tri crtice:
 
 ```yaml
-***
+---
 title: "Prijava EU Projekta"
 author: "Tim za razvoj"
 date: "2023-10-25"  
-***
+---
 ```
 
 Ovo se zovu **metapodaci (YAML)**. Quarto će automatski uzeti ove informacije i pozicionirati ih na naslovnicu tvog gotovog Word/PDF dokumenta.
 
-> **Najčešća početnička greška u Docs-as-Code!**
+> 💡 **Savjet:** Ako Obsidian automatski prikaže ovaj dio kao grafička "Svojstva" (Properties) umjesto čistog teksta, a ti želiš vidjeti sirovi kod kao u gornjem primjeru, klikni na izbornik s tri točkice **"⋮"** u gornjem desnom kutu i odaberi **"Source mode"** (Izvorni način rada).
+
+> **Najčešća početnička greška u Docs-as-Code načinu rada!**
 > U praksi, ovu datoteku uređuje isključivo **Voditelj projekta**. Ostali članovi tima je NE bi trebali dirati! Ako dvije osobe iz tima istovremeno promijene datum u YAML bloku, nastat će Merge Conflict koji će prekinuti automatsko generiranje Word dokumenta za cijeli tim!
 
 ***
@@ -138,23 +140,23 @@ Evo konkretnih navika koje konflikte svode na nulu:
 | **Pull svako jutro** (Preuzimanje) | Kad otvoriš Obsidian, prvo napravi *Git: Pull*. Uvijek moraš imati najnoviju verziju rada tvojih kolega. |
 | **Poštuj granice datoteka** | Radi samo u datotekama koje su ti dodijeljene. Ne ispravljaj tipfelere u tuđem tekstu dok on radi! |
 | **Commit često** | Najgora navika je pisanje 4 sata bez ijednog Commita. Što su Commiti manji i češći, konflikti se teže događaju. |
-| **Komunikacija spašava** | Nemaš strpljenja i moraš hitno nešto promijeniti u tuđoj datoteci? Pošalji poruku na Teams/Slack: *"Hej Pero, planiram dodati odlomak u tvoju 02-metodologija.qmd. Mogu li napraviti push?"* |
+| **Komunikacija spašava** | Nemaš strpljenja i moraš hitno nešto promijeniti u tuđoj datoteci? Kontaktiraj kolegu: *"Hej Pero, planiram dodati odlomak u tvoju 02-metodologija.qmd. Mogu li napraviti push?"* |
 
-*(Napomena: Konačna i najviša zaštita od konflikata je rad na vlastitoj **grani**, što detaljno učimo u sljedećem poglavlju!)*
+*(Napomena: Konačna i najbolja zaštita od konflikata je rad na vlastitoj **grani**, što detaljno učimo u sljedećem poglavlju!)*
 
 ***
 
 ## 5.6 Test – Simulacija dodjele vlasništva
 
-Da bismo tehnički potvrdili ovaj koncept, napravimo kratku vježbu.
+Da bismo tehnički potvrdili ovaj koncept, napravimo kratku vježbu:
 
-1. Ti preuzmi odgovornost za poglavlje Uvod.
-2. U Obsidianu, klikni na ikonu "Nova bilješka" (New note) ili pritisni `Ctrl+N`.
-3. Preimenuj bilješku u `01-uvod` (Obsidian će automatski dodati `.md`).
-4. Upiši naslov (`# Uvod`) i par rečenica teksta.
-5. Napravi Commit i Push.
+1. Zamisli da si ti Ana i da si zadužen/a za uvodni dio. Otvori mapu `01_Prijava_EU_Projekta/Zajednicki_Rad` i u njoj pronađi datoteku `01_Uvod_Ana.md`.
+2. Otvori je dvoklikom u Obsidianu.
+3. Nadopiši rečenicu ili dvije na kraj teksta.
+4. U desnoj bočnoj traci u Source Control panelu klikni na **⊕ Stage All**, pa na **✓ Commit** (unesi poruku npr. 'dopuna uvoda'), i na kraju klikni **↑ Push**.
+5. Kada se završi Push, na ekranu će se pojaviti GitHub Sign In prozor (ako već nisi prijavljen/a). Odaberi prijavu putem Tokena i zalijepi svoj PAT token.
 
-Sve dok pišeš isključivo unutar svog `01-uvod` dokumenta, tehnički si apsolutno siguran/na od konflikata s ostalim članovima tima!
+Sve dok pišeš isključivo unutar svoje datoteke `01_Uvod_Ana.md`, potpuno si siguran/na od bilo kakvih konflikata s drugim članovima tima!
 
 ***
 
